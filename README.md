@@ -34,9 +34,29 @@ All content lives in three JSON files in `public/data/`:
 
 | File | Content |
 |---|---|
-| `program.json` | Days and timeline entries per room (`break`, `session`, `keynote`, `plenary`). `room: "all"` shows the entry in both rooms. A `session` entry points to a session by `sessionId`. |
-| `sessions.json` | Sessions with chair, affiliation and papers (time, title, authors). |
+| `program.json` | `rooms` (toggle order, first = default) and the timeline per day. Entry types: `break`, `social`, `session` (points to `sessions.json` via `sessionId`), `keynote`, `plenary`. `room: "all"` shows the entry in both rooms; `"showInAllRooms": true` shows an entry held in one room also in the other room's view (used for keynotes, opening and closing in Sala B). A workshop over two slots is two `session` entries with the same `sessionId`. |
+| `sessions.json` | One item per session/workshop/track: `id`, `code` (chip label, e.g. `S1`, `W3`), `kind`, day, room, `start`/`end`, optional `slots` (when split by a break), `title`, `chair` (or `null` until known), `papers`. |
 | `news.json` | News items, newest first. `date` is `"YYYY-MM-DD"` or `null` (shown as "[Date]"). Paragraphs in `body` are separated by a blank line (`\n\n`). |
+
+### Adding papers and chairs
+
+Find the session by `id` in `public/data/sessions.json` and fill `chair` and `papers`:
+
+```json
+{
+  "id": "s1",
+  "code": "S1",
+  "title": "Network Protocols, Configuration & Management",
+  "chair": { "name": "Jane Doe", "affiliation": "University of Somewhere" },
+  "papers": [
+    { "time": "11:00", "title": "Paper title", "authors": "A. Author, B. Author" }
+  ]
+}
+```
+
+`time` and `affiliation` are optional. While `papers` is empty the session shows "The paper list will be published soon."; while `chair` is `null` the chair block is hidden.
+
+Session ids: `s1`–`s9` (conference sessions), `w1`–`w8` (workshops), `industry`, `phd-forum`, `demo-poster`.
 
 Edit the files, commit and push: the workflow republishes in about a minute. Phones that already installed the app pick up the new data the next time they open it while online (the service worker updates itself and reloads).
 

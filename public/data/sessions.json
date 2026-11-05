@@ -1,956 +1,304 @@
 {
   "sessions": [
     {
-      "id": "B1",
+      "id": "w1",
+      "code": "W1",
+      "kind": "workshop",
       "day": "2026-11-10",
       "room": "B",
       "start": "09:00",
-      "end": "10:30",
-      "title": "[Session title]",
-      "chair": {
-        "name": "[Chair name]",
-        "affiliation": "[Affiliation]"
-      },
-      "papers": [
-        {
-          "time": "09:00",
-          "title": "[Paper title 1]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "09:20",
-          "title": "[Paper title 2]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "09:40",
-          "title": "[Paper title 3]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "10:00",
-          "title": "[Paper title 4]",
-          "authors": "[Author names]"
-        }
-      ]
-    },
-    {
-      "id": "A2",
-      "day": "2026-11-10",
-      "room": "A",
-      "start": "11:00",
       "end": "12:30",
-      "title": "[Session title]",
-      "chair": {
-        "name": "[Chair name]",
-        "affiliation": "[Affiliation]"
-      },
-      "papers": [
+      "slots": [
         {
-          "time": "11:00",
-          "title": "[Paper title 1]",
-          "authors": "[Author names]"
+          "start": "09:00",
+          "end": "10:30"
         },
         {
-          "time": "11:20",
-          "title": "[Paper title 2]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "11:40",
-          "title": "[Paper title 3]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "12:00",
-          "title": "[Paper title 4]",
-          "authors": "[Author names]"
+          "start": "11:00",
+          "end": "12:30"
         }
-      ]
+      ],
+      "title": "First International Workshop on Networks for AI and AI for Networks (NetAI 2026)",
+      "chair": null,
+      "papers": []
     },
     {
-      "id": "B2",
-      "day": "2026-11-10",
-      "room": "B",
-      "start": "11:00",
-      "end": "12:30",
-      "title": "[Session title]",
-      "chair": {
-        "name": "[Chair name]",
-        "affiliation": "[Affiliation]"
-      },
-      "papers": [
-        {
-          "time": "11:00",
-          "title": "[Paper title 1]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "11:20",
-          "title": "[Paper title 2]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "11:40",
-          "title": "[Paper title 3]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "12:00",
-          "title": "[Paper title 4]",
-          "authors": "[Author names]"
-        }
-      ]
-    },
-    {
-      "id": "A3",
+      "id": "w2",
+      "code": "W2",
+      "kind": "workshop",
       "day": "2026-11-10",
       "room": "A",
-      "start": "14:00",
-      "end": "15:30",
-      "title": "[Session title]",
-      "chair": {
-        "name": "[Chair name]",
-        "affiliation": "[Affiliation]"
-      },
-      "papers": [
-        {
-          "time": "14:00",
-          "title": "[Paper title 1]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "14:20",
-          "title": "[Paper title 2]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "14:40",
-          "title": "[Paper title 3]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "15:00",
-          "title": "[Paper title 4]",
-          "authors": "[Author names]"
-        }
-      ]
-    },
-    {
-      "id": "B3",
-      "day": "2026-11-10",
-      "room": "B",
-      "start": "14:00",
-      "end": "15:30",
-      "title": "[Session title]",
-      "chair": {
-        "name": "[Chair name]",
-        "affiliation": "[Affiliation]"
-      },
-      "papers": [
-        {
-          "time": "14:00",
-          "title": "[Paper title 1]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "14:20",
-          "title": "[Paper title 2]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "14:40",
-          "title": "[Paper title 3]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "15:00",
-          "title": "[Paper title 4]",
-          "authors": "[Author names]"
-        }
-      ]
-    },
-    {
-      "id": "A4",
-      "day": "2026-11-10",
-      "room": "A",
-      "start": "16:00",
-      "end": "17:30",
-      "title": "[Session title]",
-      "chair": {
-        "name": "[Chair name]",
-        "affiliation": "[Affiliation]"
-      },
-      "papers": [
-        {
-          "time": "16:00",
-          "title": "[Paper title 1]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "16:20",
-          "title": "[Paper title 2]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "16:40",
-          "title": "[Paper title 3]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "17:00",
-          "title": "[Paper title 4]",
-          "authors": "[Author names]"
-        }
-      ]
-    },
-    {
-      "id": "B4",
-      "day": "2026-11-10",
-      "room": "B",
-      "start": "16:00",
-      "end": "17:30",
-      "title": "[Session title]",
-      "chair": {
-        "name": "[Chair name]",
-        "affiliation": "[Affiliation]"
-      },
-      "papers": [
-        {
-          "time": "16:00",
-          "title": "[Paper title 1]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "16:20",
-          "title": "[Paper title 2]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "16:40",
-          "title": "[Paper title 3]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "17:00",
-          "title": "[Paper title 4]",
-          "authors": "[Author names]"
-        }
-      ]
-    },
-    {
-      "id": "B5",
-      "day": "2026-11-11",
-      "room": "B",
       "start": "09:00",
-      "end": "10:30",
-      "title": "[Session title]",
-      "chair": {
-        "name": "[Chair name]",
-        "affiliation": "[Affiliation]"
-      },
-      "papers": [
-        {
-          "time": "09:00",
-          "title": "[Paper title 1]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "09:20",
-          "title": "[Paper title 2]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "09:40",
-          "title": "[Paper title 3]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "10:00",
-          "title": "[Paper title 4]",
-          "authors": "[Author names]"
-        }
-      ]
-    },
-    {
-      "id": "A6",
-      "day": "2026-11-11",
-      "room": "A",
-      "start": "11:00",
       "end": "12:30",
-      "title": "[Session title]",
-      "chair": {
-        "name": "[Chair name]",
-        "affiliation": "[Affiliation]"
-      },
-      "papers": [
+      "slots": [
         {
-          "time": "11:00",
-          "title": "[Paper title 1]",
-          "authors": "[Author names]"
+          "start": "09:00",
+          "end": "10:30"
         },
         {
-          "time": "11:20",
-          "title": "[Paper title 2]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "11:40",
-          "title": "[Paper title 3]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "12:00",
-          "title": "[Paper title 4]",
-          "authors": "[Author names]"
+          "start": "11:00",
+          "end": "12:30"
         }
-      ]
+      ],
+      "title": "AI-Driven Distributed Cyber-Physical Systems for Smart Medical Solutions (AiDDRESS-MED)",
+      "chair": null,
+      "papers": []
     },
     {
-      "id": "B6",
-      "day": "2026-11-11",
+      "id": "w3",
+      "code": "W3",
+      "kind": "workshop",
+      "day": "2026-11-10",
       "room": "B",
-      "start": "11:00",
-      "end": "12:30",
-      "title": "[Session title]",
-      "chair": {
-        "name": "[Chair name]",
-        "affiliation": "[Affiliation]"
-      },
-      "papers": [
+      "start": "13:30",
+      "end": "17:00",
+      "slots": [
         {
-          "time": "11:00",
-          "title": "[Paper title 1]",
-          "authors": "[Author names]"
+          "start": "13:30",
+          "end": "15:00"
         },
         {
-          "time": "11:20",
-          "title": "[Paper title 2]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "11:40",
-          "title": "[Paper title 3]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "12:00",
-          "title": "[Paper title 4]",
-          "authors": "[Author names]"
+          "start": "15:30",
+          "end": "17:00"
         }
-      ]
+      ],
+      "title": "DevOps for the Edge–Cloud Continuum (ContinuumOps)",
+      "chair": null,
+      "papers": []
     },
     {
-      "id": "A7",
-      "day": "2026-11-11",
+      "id": "w4",
+      "code": "W4",
+      "kind": "workshop",
+      "day": "2026-11-10",
       "room": "A",
-      "start": "14:00",
-      "end": "15:30",
-      "title": "[Session title]",
-      "chair": {
-        "name": "[Chair name]",
-        "affiliation": "[Affiliation]"
-      },
-      "papers": [
+      "start": "13:30",
+      "end": "17:00",
+      "slots": [
         {
-          "time": "14:00",
-          "title": "[Paper title 1]",
-          "authors": "[Author names]"
+          "start": "13:30",
+          "end": "15:00"
         },
         {
-          "time": "14:20",
-          "title": "[Paper title 2]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "14:40",
-          "title": "[Paper title 3]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "15:00",
-          "title": "[Paper title 4]",
-          "authors": "[Author names]"
+          "start": "15:30",
+          "end": "17:00"
         }
-      ]
+      ],
+      "title": "First Workshop on Decentralized Ecosystems and Technologies for Emerging Computing Trends (DETECT)",
+      "chair": null,
+      "papers": []
     },
     {
-      "id": "B7",
+      "id": "s1",
+      "code": "S1",
+      "kind": "session",
       "day": "2026-11-11",
-      "room": "B",
-      "start": "14:00",
-      "end": "15:30",
-      "title": "[Session title]",
-      "chair": {
-        "name": "[Chair name]",
-        "affiliation": "[Affiliation]"
-      },
-      "papers": [
-        {
-          "time": "14:00",
-          "title": "[Paper title 1]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "14:20",
-          "title": "[Paper title 2]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "14:40",
-          "title": "[Paper title 3]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "15:00",
-          "title": "[Paper title 4]",
-          "authors": "[Author names]"
-        }
-      ]
-    },
-    {
-      "id": "A8",
-      "day": "2026-11-11",
-      "room": "A",
-      "start": "16:00",
-      "end": "17:30",
-      "title": "[Session title]",
-      "chair": {
-        "name": "[Chair name]",
-        "affiliation": "[Affiliation]"
-      },
-      "papers": [
-        {
-          "time": "16:00",
-          "title": "[Paper title 1]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "16:20",
-          "title": "[Paper title 2]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "16:40",
-          "title": "[Paper title 3]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "17:00",
-          "title": "[Paper title 4]",
-          "authors": "[Author names]"
-        }
-      ]
-    },
-    {
-      "id": "B8",
-      "day": "2026-11-11",
-      "room": "B",
-      "start": "16:00",
-      "end": "17:30",
-      "title": "[Session title]",
-      "chair": {
-        "name": "[Chair name]",
-        "affiliation": "[Affiliation]"
-      },
-      "papers": [
-        {
-          "time": "16:00",
-          "title": "[Paper title 1]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "16:20",
-          "title": "[Paper title 2]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "16:40",
-          "title": "[Paper title 3]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "17:00",
-          "title": "[Paper title 4]",
-          "authors": "[Author names]"
-        }
-      ]
-    },
-    {
-      "id": "B9",
-      "day": "2026-11-12",
-      "room": "B",
-      "start": "09:00",
-      "end": "10:30",
-      "title": "[Session title]",
-      "chair": {
-        "name": "[Chair name]",
-        "affiliation": "[Affiliation]"
-      },
-      "papers": [
-        {
-          "time": "09:00",
-          "title": "[Paper title 1]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "09:20",
-          "title": "[Paper title 2]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "09:40",
-          "title": "[Paper title 3]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "10:00",
-          "title": "[Paper title 4]",
-          "authors": "[Author names]"
-        }
-      ]
-    },
-    {
-      "id": "A10",
-      "day": "2026-11-12",
-      "room": "A",
-      "start": "11:00",
-      "end": "12:30",
-      "title": "[Session title]",
-      "chair": {
-        "name": "[Chair name]",
-        "affiliation": "[Affiliation]"
-      },
-      "papers": [
-        {
-          "time": "11:00",
-          "title": "[Paper title 1]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "11:20",
-          "title": "[Paper title 2]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "11:40",
-          "title": "[Paper title 3]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "12:00",
-          "title": "[Paper title 4]",
-          "authors": "[Author names]"
-        }
-      ]
-    },
-    {
-      "id": "B10",
-      "day": "2026-11-12",
       "room": "B",
       "start": "11:00",
       "end": "12:30",
-      "title": "[Session title]",
-      "chair": {
-        "name": "[Chair name]",
-        "affiliation": "[Affiliation]"
-      },
-      "papers": [
-        {
-          "time": "11:00",
-          "title": "[Paper title 1]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "11:20",
-          "title": "[Paper title 2]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "11:40",
-          "title": "[Paper title 3]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "12:00",
-          "title": "[Paper title 4]",
-          "authors": "[Author names]"
-        }
-      ]
+      "title": "Network Protocols, Configuration & Management",
+      "chair": null,
+      "papers": []
     },
     {
-      "id": "A11",
+      "id": "s2",
+      "code": "S2",
+      "kind": "session",
+      "day": "2026-11-11",
+      "room": "B",
+      "start": "13:30",
+      "end": "15:00",
+      "title": "Federated & Distributed Learning at the Edge",
+      "chair": null,
+      "papers": []
+    },
+    {
+      "id": "s3",
+      "code": "S3",
+      "kind": "session",
+      "day": "2026-11-11",
+      "room": "B",
+      "start": "15:30",
+      "end": "17:00",
+      "title": "Cloud-Edge Resource Management & Scheduling",
+      "chair": null,
+      "papers": []
+    },
+    {
+      "id": "phd-forum",
+      "code": "PhD",
+      "kind": "phd",
+      "day": "2026-11-11",
+      "room": "A",
+      "start": "15:30",
+      "end": "17:00",
+      "title": "PhD Forum",
+      "chair": null,
+      "papers": []
+    },
+    {
+      "id": "industry",
+      "code": "IND",
+      "kind": "industry",
+      "day": "2026-11-12",
+      "room": "B",
+      "start": "10:30",
+      "end": "13:00",
+      "title": "Industry Track",
+      "chair": null,
+      "papers": []
+    },
+    {
+      "id": "w5",
+      "code": "W5",
+      "kind": "workshop",
       "day": "2026-11-12",
       "room": "A",
-      "start": "14:00",
-      "end": "15:30",
-      "title": "[Session title]",
-      "chair": {
-        "name": "[Chair name]",
-        "affiliation": "[Affiliation]"
-      },
-      "papers": [
-        {
-          "time": "14:00",
-          "title": "[Paper title 1]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "14:20",
-          "title": "[Paper title 2]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "14:40",
-          "title": "[Paper title 3]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "15:00",
-          "title": "[Paper title 4]",
-          "authors": "[Author names]"
-        }
-      ]
+      "start": "10:30",
+      "end": "13:00",
+      "title": "Spatio-Temporal Intelligence for Network Computing and Applications (STiNCA)",
+      "chair": null,
+      "papers": []
     },
     {
-      "id": "B11",
+      "id": "s4",
+      "code": "S4",
+      "kind": "session",
       "day": "2026-11-12",
       "room": "B",
       "start": "14:00",
       "end": "15:30",
-      "title": "[Session title]",
-      "chair": {
-        "name": "[Chair name]",
-        "affiliation": "[Affiliation]"
-      },
-      "papers": [
-        {
-          "time": "14:00",
-          "title": "[Paper title 1]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "14:20",
-          "title": "[Paper title 2]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "14:40",
-          "title": "[Paper title 3]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "15:00",
-          "title": "[Paper title 4]",
-          "authors": "[Author names]"
-        }
-      ]
+      "title": "Blockchain, Decentralized Trust & Identity",
+      "chair": null,
+      "papers": []
     },
     {
-      "id": "A12",
+      "id": "w6",
+      "code": "W6",
+      "kind": "workshop",
       "day": "2026-11-12",
       "room": "A",
-      "start": "16:00",
+      "start": "14:00",
       "end": "17:30",
-      "title": "[Session title]",
-      "chair": {
-        "name": "[Chair name]",
-        "affiliation": "[Affiliation]"
-      },
-      "papers": [
+      "slots": [
         {
-          "time": "16:00",
-          "title": "[Paper title 1]",
-          "authors": "[Author names]"
+          "start": "14:00",
+          "end": "15:30"
         },
         {
-          "time": "16:20",
-          "title": "[Paper title 2]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "16:40",
-          "title": "[Paper title 3]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "17:00",
-          "title": "[Paper title 4]",
-          "authors": "[Author names]"
+          "start": "16:00",
+          "end": "17:30"
         }
-      ]
+      ],
+      "title": "First International Workshop on AI-Enabled Secure & Reliable Communications (AI-SecureCom)",
+      "chair": null,
+      "papers": []
     },
     {
-      "id": "B12",
+      "id": "s5",
+      "code": "S5",
+      "kind": "session",
       "day": "2026-11-12",
       "room": "B",
       "start": "16:00",
       "end": "17:30",
-      "title": "[Session title]",
-      "chair": {
-        "name": "[Chair name]",
-        "affiliation": "[Affiliation]"
-      },
-      "papers": [
-        {
-          "time": "16:00",
-          "title": "[Paper title 1]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "16:20",
-          "title": "[Paper title 2]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "16:40",
-          "title": "[Paper title 3]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "17:00",
-          "title": "[Paper title 4]",
-          "authors": "[Author names]"
-        }
-      ]
+      "title": "High-Performance & Emerging Computing Systems",
+      "chair": null,
+      "papers": []
     },
     {
-      "id": "B13",
+      "id": "s6",
+      "code": "S6",
+      "kind": "session",
       "day": "2026-11-13",
       "room": "B",
       "start": "09:00",
       "end": "10:30",
-      "title": "[Session title]",
-      "chair": {
-        "name": "[Chair name]",
-        "affiliation": "[Affiliation]"
-      },
-      "papers": [
-        {
-          "time": "09:00",
-          "title": "[Paper title 1]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "09:20",
-          "title": "[Paper title 2]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "09:40",
-          "title": "[Paper title 3]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "10:00",
-          "title": "[Paper title 4]",
-          "authors": "[Author names]"
-        }
-      ]
+      "title": "Network Traffic Analysis, Engineering & Security",
+      "chair": null,
+      "papers": []
     },
     {
-      "id": "A14",
+      "id": "w7",
+      "code": "W7",
+      "kind": "workshop",
       "day": "2026-11-13",
       "room": "A",
-      "start": "11:00",
+      "start": "09:00",
       "end": "12:30",
-      "title": "[Session title]",
-      "chair": {
-        "name": "[Chair name]",
-        "affiliation": "[Affiliation]"
-      },
-      "papers": [
+      "slots": [
         {
-          "time": "11:00",
-          "title": "[Paper title 1]",
-          "authors": "[Author names]"
+          "start": "09:00",
+          "end": "10:30"
         },
         {
-          "time": "11:20",
-          "title": "[Paper title 2]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "11:40",
-          "title": "[Paper title 3]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "12:00",
-          "title": "[Paper title 4]",
-          "authors": "[Author names]"
+          "start": "11:00",
+          "end": "12:30"
         }
-      ]
+      ],
+      "title": "IoT Applications and Cyber-Physical Systems in the Edge–Cloud CONtinuum (ICON)",
+      "chair": null,
+      "papers": []
     },
     {
-      "id": "B14",
+      "id": "s7",
+      "code": "S7",
+      "kind": "session",
       "day": "2026-11-13",
       "room": "B",
       "start": "11:00",
       "end": "12:30",
-      "title": "[Session title]",
-      "chair": {
-        "name": "[Chair name]",
-        "affiliation": "[Affiliation]"
-      },
-      "papers": [
-        {
-          "time": "11:00",
-          "title": "[Paper title 1]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "11:20",
-          "title": "[Paper title 2]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "11:40",
-          "title": "[Paper title 3]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "12:00",
-          "title": "[Paper title 4]",
-          "authors": "[Author names]"
-        }
-      ]
+      "title": "Intelligent Cyber-Physical, Energy & IoT Systems",
+      "chair": null,
+      "papers": []
     },
     {
-      "id": "A15",
-      "day": "2026-11-13",
-      "room": "A",
-      "start": "14:00",
-      "end": "15:30",
-      "title": "[Session title]",
-      "chair": {
-        "name": "[Chair name]",
-        "affiliation": "[Affiliation]"
-      },
-      "papers": [
-        {
-          "time": "14:00",
-          "title": "[Paper title 1]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "14:20",
-          "title": "[Paper title 2]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "14:40",
-          "title": "[Paper title 3]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "15:00",
-          "title": "[Paper title 4]",
-          "authors": "[Author names]"
-        }
-      ]
-    },
-    {
-      "id": "B15",
+      "id": "s8",
+      "code": "S8",
+      "kind": "session",
       "day": "2026-11-13",
       "room": "B",
-      "start": "14:00",
-      "end": "15:30",
-      "title": "[Session title]",
-      "chair": {
-        "name": "[Chair name]",
-        "affiliation": "[Affiliation]"
-      },
-      "papers": [
-        {
-          "time": "14:00",
-          "title": "[Paper title 1]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "14:20",
-          "title": "[Paper title 2]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "14:40",
-          "title": "[Paper title 3]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "15:00",
-          "title": "[Paper title 4]",
-          "authors": "[Author names]"
-        }
-      ]
+      "start": "14:30",
+      "end": "16:00",
+      "title": "Wireless, IoT & V2X Networking",
+      "chair": null,
+      "papers": []
     },
     {
-      "id": "A16",
+      "id": "w8",
+      "code": "W8",
+      "kind": "workshop",
       "day": "2026-11-13",
       "room": "A",
-      "start": "16:00",
-      "end": "17:30",
-      "title": "[Session title]",
-      "chair": {
-        "name": "[Chair name]",
-        "affiliation": "[Affiliation]"
-      },
-      "papers": [
-        {
-          "time": "16:00",
-          "title": "[Paper title 1]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "16:20",
-          "title": "[Paper title 2]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "16:40",
-          "title": "[Paper title 3]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "17:00",
-          "title": "[Paper title 4]",
-          "authors": "[Author names]"
-        }
-      ]
+      "start": "14:30",
+      "end": "16:00",
+      "title": "GreenNet-AI 2026: AI-Driven Approaches for Green and Sustainable Networking",
+      "chair": null,
+      "papers": []
     },
     {
-      "id": "B16",
+      "id": "s9",
+      "code": "S9",
+      "kind": "session",
       "day": "2026-11-13",
       "room": "B",
-      "start": "16:00",
-      "end": "17:30",
-      "title": "[Session title]",
-      "chair": {
-        "name": "[Chair name]",
-        "affiliation": "[Affiliation]"
-      },
-      "papers": [
-        {
-          "time": "16:00",
-          "title": "[Paper title 1]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "16:20",
-          "title": "[Paper title 2]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "16:40",
-          "title": "[Paper title 3]",
-          "authors": "[Author names]"
-        },
-        {
-          "time": "17:00",
-          "title": "[Paper title 4]",
-          "authors": "[Author names]"
-        }
-      ]
+      "start": "16:30",
+      "end": "18:30",
+      "title": "Security, Intrusion Detection & Threat Intelligence",
+      "chair": null,
+      "papers": []
+    },
+    {
+      "id": "demo-poster",
+      "code": "D&P",
+      "kind": "demo",
+      "day": "2026-11-13",
+      "room": "A",
+      "start": "16:30",
+      "end": "18:30",
+      "title": "Demo + Poster",
+      "chair": null,
+      "papers": []
     }
   ]
 }

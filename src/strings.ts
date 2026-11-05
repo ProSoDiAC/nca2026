@@ -53,6 +53,8 @@ export const strings = {
     dayGroup: 'Select day',
     roomGroup: 'Select room',
     keynote: 'Keynote',
+    social: 'Social',
+    details: 'Details',
     plenary: 'Plenary',
     chairPrefix: 'Chair · ',
     papers: (n: number) => (n === 1 ? '1 paper' : `${n} papers`),
@@ -68,6 +70,7 @@ export const strings = {
     noResults: 'No sessions match your search.',
     empty: 'No sessions on this day.',
     chair: 'Session chair',
+    papersTba: 'The paper list will be published soon.',
     notFound: (id: string) => `Session ${id} was not found.`,
   },
   news: {

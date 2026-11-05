@@ -4,20 +4,26 @@ const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'expected a date like 20
 const hhmm = z.string().regex(/^\d{2}:\d{2}$/, 'expected a time like 09:00');
 const room = z.string().min(1);
 
+const showInAllRooms = z.boolean().optional();
+
 export const programSchema = z.object({
+  /** Order of the room toggle; the first one is selected by default. Defaults to the rooms found in entries. */
+  rooms: z.array(room).min(1).optional(),
   days: z.array(z.object({ date: isoDate, dow: z.string().min(1) })).min(1),
   entries: z.array(
     z.discriminatedUnion('type', [
       z.object({ type: z.literal('break'), day: isoDate, room, start: hhmm, end: hhmm, title: z.string() }),
-      z.object({ type: z.literal('session'), day: isoDate, room, start: hhmm, end: hhmm, sessionId: z.string().min(1) }),
+      z.object({ type: z.literal('social'), day: isoDate, room, start: hhmm, end: hhmm, title: z.string() }),
+      z.object({ type: z.literal('session'), day: isoDate, room, start: hhmm, end: hhmm, sessionId: z.string().min(1), showInAllRooms }),
       z.object({
         type: z.enum(['keynote', 'plenary']),
         day: isoDate,
         room,
         start: hhmm,
         end: hhmm,
-        title: z.string(),
+        title: z.string().optional(),
         speaker: z.string().optional(),
+        showInAllRooms,
       }),
     ]),
   ),
@@ -27,13 +33,18 @@ export const sessionsSchema = z.object({
   sessions: z.array(
     z.object({
       id: z.string().min(1),
+      /** Short label for the chip, e.g. "S1", "W3". Falls back to the id. */
+      code: z.string().min(1).optional(),
+      kind: z.enum(['session', 'workshop', 'industry', 'phd', 'demo']).optional(),
       day: isoDate,
       room,
       start: hhmm,
       end: hhmm,
+      /** When a session is split by a break (e.g. a workshop over two slots). */
+      slots: z.array(z.object({ start: hhmm, end: hhmm })).optional(),
       title: z.string(),
-      chair: z.object({ name: z.string(), affiliation: z.string() }),
-      papers: z.array(z.object({ time: hhmm, title: z.string(), authors: z.string() })),
+      chair: z.object({ name: z.string(), affiliation: z.string().optional() }).nullable().optional(),
+      papers: z.array(z.object({ time: hhmm.optional(), title: z.string(), authors: z.string() })),
     }),
   ),
 });

@@ -20,7 +20,7 @@ const norm = (x: string) =>
 
 function haystack(s: Session) {
   return norm(
-    [s.id, s.title, s.chair.name, s.chair.affiliation, ...s.papers.flatMap((p) => [p.title, p.authors])].join(' \n '),
+    [s.id, s.code ?? '', s.title, s.chair?.name ?? '', s.chair?.affiliation ?? '', ...s.papers.flatMap((p) => [p.title, p.authors])].join(' \n '),
   );
 }
 
@@ -137,7 +137,8 @@ export function SessionsPage() {
 
 function SessionItem({ session: s, dow, open, onToggle }: { session: Session; dow: string; open: boolean; onToggle: () => void }) {
   const panelId = `session-panel-${s.id}`;
-  const meta = `${dow} ${dayNumber(s.day)} · ${s.start} – ${s.end} · ${strings.roomLabel(s.room)}`;
+  const times = (s.slots ?? [{ start: s.start, end: s.end }]).map((x) => `${x.start} – ${x.end}`).join(', ');
+  const meta = `${dow} ${dayNumber(s.day)} · ${times} · ${strings.roomLabel(s.room)}`;
   return (
     <section id={`session-${s.id}`} className="flex-none overflow-hidden rounded-[18px] bg-card">
       <h2 className="m-0">
@@ -148,8 +149,8 @@ function SessionItem({ session: s, dow, open, onToggle }: { session: Session; do
           aria-controls={panelId}
           className="flex min-h-[72px] w-full items-center gap-3 border-0 bg-transparent px-4 py-3.5 text-left text-night"
         >
-          <span className="min-w-[40px] flex-none rounded-[10px] bg-teal-soft px-1.5 py-1.5 text-center text-[13px] font-semibold text-teal-text">
-            {s.id}
+          <span className="min-w-[40px] flex-none rounded-[10px] bg-teal-soft px-2 py-1.5 text-center text-[13px] font-semibold text-teal-text">
+            {s.code ?? s.id}
           </span>
           <span className="flex min-w-0 flex-1 flex-col gap-0.5">
             <span className="font-sora text-[15px] font-semibold">{s.title}</span>
@@ -162,6 +163,7 @@ function SessionItem({ session: s, dow, open, onToggle }: { session: Session; do
       </h2>
       {open && (
         <div id={panelId} className="flex flex-col gap-3.5 px-4 pb-4">
+          {s.chair && (
           <div className="flex items-center gap-3 rounded-[14px] bg-page p-3">
             <span className="flex h-10 w-10 flex-none items-center justify-center rounded-chip bg-night text-ochre">
               <IconPerson size={20} />
@@ -169,13 +171,15 @@ function SessionItem({ session: s, dow, open, onToggle }: { session: Session; do
             <span className="flex flex-col gap-px">
               <span className="text-xs font-semibold uppercase tracking-[0.05em] text-tab">{t.chair}</span>
               <span className="text-[15px] font-semibold">{s.chair.name}</span>
-              <span className="text-[13px] text-muted">{s.chair.affiliation}</span>
+              {s.chair.affiliation && <span className="text-[13px] text-muted">{s.chair.affiliation}</span>}
             </span>
           </div>
+          )}
+          {s.papers.length === 0 && <p className="m-0 text-sm text-muted">{t.papersTba}</p>}
           <ol className="m-0 flex list-none flex-col p-0">
             {s.papers.map((p, i) => (
               <li key={i} className="flex gap-3 border-t border-divider py-3">
-                <span className="w-11 flex-none text-[13px] font-semibold text-teal-text">{p.time}</span>
+                {p.time && <span className="w-11 flex-none text-[13px] font-semibold text-teal-text">{p.time}</span>}
                 <span className="flex min-w-0 flex-col gap-0.5">
                   <span className="text-[14.5px] font-medium leading-[1.35]">{p.title}</span>
                   <span className="text-[13px] text-muted">{p.authors}</span>

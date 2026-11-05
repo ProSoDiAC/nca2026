@@ -27,6 +27,7 @@ export function ProgramPage() {
   const dayDates = program.days.map((d) => d.date);
 
   const rooms = useMemo(() => {
+    if (program.rooms) return program.rooms;
     const set = new Set(program.entries.map((e) => e.room).filter((r) => r !== 'all'));
     return [...set].sort();
   }, [program]);
@@ -50,7 +51,7 @@ export function ProgramPage() {
     () =>
       program.entries
         .map((e, i) => ({ e, i }))
-        .filter(({ e }) => e.day === day && (e.room === room || e.room === 'all'))
+        .filter(({ e }) => e.day === day && (e.room === room || e.room === 'all' || ('showInAllRooms' in e && e.showInAllRooms)))
         .sort((a, b) => a.e.start.localeCompare(b.e.start) || a.i - b.i)
         .map(({ e }) => e),
     [program, day, room],
@@ -114,8 +115,21 @@ function ProgramRow({
 
   const where = strings.roomLabel(e.room === 'all' ? room : e.room);
 
+  if (e.type === 'social') {
+    return (
+      <>
+        <TimeCol start={e.start} end={e.end} />
+        <div className="flex min-w-0 flex-1 flex-col gap-2 rounded-card bg-leaf-soft p-3.5">
+          <span className="self-start rounded-chip bg-leaf-text px-2.5 py-1 text-xs font-semibold text-white">{t.social}</span>
+          <div className="font-sora text-[15px] font-semibold leading-[1.3]">{e.title}</div>
+        </div>
+      </>
+    );
+  }
+
   if (e.type === 'session') {
     const session = sessionsById.get(e.sessionId);
+    const n = session?.papers.length ?? 0;
     return (
       <>
         <TimeCol start={e.start} end={e.end} />
@@ -124,14 +138,16 @@ function ProgramRow({
           className="flex min-w-0 flex-1 flex-col gap-2 rounded-card bg-card p-3.5"
         >
           <div className="flex items-center justify-between gap-2">
-            <span className="rounded-chip bg-teal-soft px-2.5 py-1 text-xs font-semibold text-teal-text">{e.sessionId}</span>
+            <span className="rounded-chip bg-teal-soft px-2.5 py-1 text-xs font-semibold text-teal-text">
+              {session?.code ?? e.sessionId}
+            </span>
             <span className="text-xs font-medium text-sub">{where}</span>
           </div>
           <div className="font-sora text-[15px] font-semibold leading-[1.3]">{session?.title ?? ''}</div>
           <div className="flex items-center justify-between gap-2 text-[13px] text-sub">
-            <span className="min-w-0">{session ? `${t.chairPrefix}${session.chair.name}` : ''}</span>
+            <span className="min-w-0">{session?.chair ? `${t.chairPrefix}${session.chair.name}` : ''}</span>
             <span className="flex flex-none items-center gap-1 font-semibold text-teal-text">
-              {session ? t.papers(session.papers.length) : ''}
+              {n > 0 ? t.papers(n) : t.details}
               <IconChevronRight />
             </span>
           </div>
@@ -151,8 +167,8 @@ function ProgramRow({
           </span>
           <span className="text-xs font-medium text-sub">{where}</span>
         </div>
-        <h2 className="m-0 font-sora text-[15px] font-semibold leading-[1.3]">{e.title}</h2>
-        {e.speaker && <div className="text-[13px] text-sub">{e.speaker}</div>}
+        <h2 className="m-0 font-sora text-[15px] font-semibold leading-[1.3]">{e.title ?? e.speaker}</h2>
+        {e.title && e.speaker && <div className="text-[13px] text-sub">{e.speaker}</div>}
       </article>
     </>
   );

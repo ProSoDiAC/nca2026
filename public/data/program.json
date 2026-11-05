@@ -1,4 +1,8 @@
 {
+  "rooms": [
+    "B",
+    "A"
+  ],
   "days": [
     {
       "date": "2026-11-10",
@@ -22,18 +26,9 @@
       "day": "2026-11-10",
       "room": "all",
       "type": "break",
-      "start": "08:30",
+      "start": "08:00",
       "end": "09:00",
-      "title": "Registration & welcome coffee"
-    },
-    {
-      "day": "2026-11-10",
-      "room": "A",
-      "type": "keynote",
-      "start": "09:00",
-      "end": "10:30",
-      "title": "[Keynote title]",
-      "speaker": "[Speaker name]"
+      "title": "Registration"
     },
     {
       "day": "2026-11-10",
@@ -41,7 +36,15 @@
       "type": "session",
       "start": "09:00",
       "end": "10:30",
-      "sessionId": "B1"
+      "sessionId": "w1"
+    },
+    {
+      "day": "2026-11-10",
+      "room": "A",
+      "type": "session",
+      "start": "09:00",
+      "end": "10:30",
+      "sessionId": "w2"
     },
     {
       "day": "2026-11-10",
@@ -49,15 +52,7 @@
       "type": "break",
       "start": "10:30",
       "end": "11:00",
-      "title": "Coffee break"
-    },
-    {
-      "day": "2026-11-10",
-      "room": "A",
-      "type": "session",
-      "start": "11:00",
-      "end": "12:30",
-      "sessionId": "A2"
+      "title": "Coffee Break"
     },
     {
       "day": "2026-11-10",
@@ -65,355 +60,388 @@
       "type": "session",
       "start": "11:00",
       "end": "12:30",
-      "sessionId": "B2"
+      "sessionId": "w1"
+    },
+    {
+      "day": "2026-11-10",
+      "room": "A",
+      "type": "session",
+      "start": "11:00",
+      "end": "12:30",
+      "sessionId": "w2"
     },
     {
       "day": "2026-11-10",
       "room": "all",
       "type": "break",
       "start": "12:30",
-      "end": "14:00",
-      "title": "Lunch"
-    },
-    {
-      "day": "2026-11-10",
-      "room": "A",
-      "type": "session",
-      "start": "14:00",
-      "end": "15:30",
-      "sessionId": "A3"
+      "end": "13:30",
+      "title": "Light Lunch"
     },
     {
       "day": "2026-11-10",
       "room": "B",
       "type": "session",
-      "start": "14:00",
-      "end": "15:30",
-      "sessionId": "B3"
+      "start": "13:30",
+      "end": "15:00",
+      "sessionId": "w3"
+    },
+    {
+      "day": "2026-11-10",
+      "room": "A",
+      "type": "session",
+      "start": "13:30",
+      "end": "15:00",
+      "sessionId": "w4"
     },
     {
       "day": "2026-11-10",
       "room": "all",
       "type": "break",
-      "start": "15:30",
-      "end": "16:00",
-      "title": "Coffee break"
-    },
-    {
-      "day": "2026-11-10",
-      "room": "A",
-      "type": "session",
-      "start": "16:00",
-      "end": "17:30",
-      "sessionId": "A4"
+      "start": "15:00",
+      "end": "15:30",
+      "title": "Coffee Break"
     },
     {
       "day": "2026-11-10",
       "room": "B",
       "type": "session",
-      "start": "16:00",
-      "end": "17:30",
-      "sessionId": "B4"
+      "start": "15:30",
+      "end": "17:00",
+      "sessionId": "w3"
+    },
+    {
+      "day": "2026-11-10",
+      "room": "A",
+      "type": "session",
+      "start": "15:30",
+      "end": "17:00",
+      "sessionId": "w4"
+    },
+    {
+      "day": "2026-11-10",
+      "room": "all",
+      "type": "social",
+      "start": "19:00",
+      "end": "21:30",
+      "title": "Welcome Cocktail"
     },
     {
       "day": "2026-11-11",
       "room": "all",
       "type": "break",
-      "start": "08:30",
+      "start": "08:00",
       "end": "09:00",
-      "title": "Registration & welcome coffee"
-    },
-    {
-      "day": "2026-11-11",
-      "room": "A",
-      "type": "keynote",
-      "start": "09:00",
-      "end": "10:30",
-      "title": "[Keynote title]",
-      "speaker": "[Speaker name]"
+      "title": "Registration"
     },
     {
       "day": "2026-11-11",
       "room": "B",
-      "type": "session",
-      "start": "09:00",
-      "end": "10:30",
-      "sessionId": "B5"
-    },
-    {
-      "day": "2026-11-11",
-      "room": "all",
-      "type": "break",
-      "start": "10:30",
-      "end": "11:00",
-      "title": "Coffee break"
-    },
-    {
-      "day": "2026-11-11",
-      "room": "A",
-      "type": "session",
-      "start": "11:00",
-      "end": "12:30",
-      "sessionId": "A6"
-    },
-    {
-      "day": "2026-11-11",
-      "room": "B",
-      "type": "session",
-      "start": "11:00",
-      "end": "12:30",
-      "sessionId": "B6"
-    },
-    {
-      "day": "2026-11-11",
-      "room": "all",
-      "type": "break",
-      "start": "12:30",
-      "end": "14:00",
-      "title": "Lunch"
-    },
-    {
-      "day": "2026-11-11",
-      "room": "A",
-      "type": "session",
-      "start": "14:00",
-      "end": "15:30",
-      "sessionId": "A7"
-    },
-    {
-      "day": "2026-11-11",
-      "room": "B",
-      "type": "session",
-      "start": "14:00",
-      "end": "15:30",
-      "sessionId": "B7"
-    },
-    {
-      "day": "2026-11-11",
-      "room": "all",
-      "type": "break",
-      "start": "15:30",
-      "end": "16:00",
-      "title": "Coffee break"
-    },
-    {
-      "day": "2026-11-11",
-      "room": "A",
-      "type": "session",
-      "start": "16:00",
-      "end": "17:30",
-      "sessionId": "A8"
-    },
-    {
-      "day": "2026-11-11",
-      "room": "B",
-      "type": "session",
-      "start": "16:00",
-      "end": "17:30",
-      "sessionId": "B8"
-    },
-    {
-      "day": "2026-11-12",
-      "room": "all",
-      "type": "break",
-      "start": "08:30",
-      "end": "09:00",
-      "title": "Registration & welcome coffee"
-    },
-    {
-      "day": "2026-11-12",
-      "room": "A",
-      "type": "keynote",
-      "start": "09:00",
-      "end": "10:30",
-      "title": "[Keynote title]",
-      "speaker": "[Speaker name]"
-    },
-    {
-      "day": "2026-11-12",
-      "room": "B",
-      "type": "session",
-      "start": "09:00",
-      "end": "10:30",
-      "sessionId": "B9"
-    },
-    {
-      "day": "2026-11-12",
-      "room": "all",
-      "type": "break",
-      "start": "10:30",
-      "end": "11:00",
-      "title": "Coffee break"
-    },
-    {
-      "day": "2026-11-12",
-      "room": "A",
-      "type": "session",
-      "start": "11:00",
-      "end": "12:30",
-      "sessionId": "A10"
-    },
-    {
-      "day": "2026-11-12",
-      "room": "B",
-      "type": "session",
-      "start": "11:00",
-      "end": "12:30",
-      "sessionId": "B10"
-    },
-    {
-      "day": "2026-11-12",
-      "room": "all",
-      "type": "break",
-      "start": "12:30",
-      "end": "14:00",
-      "title": "Lunch"
-    },
-    {
-      "day": "2026-11-12",
-      "room": "A",
-      "type": "session",
-      "start": "14:00",
-      "end": "15:30",
-      "sessionId": "A11"
-    },
-    {
-      "day": "2026-11-12",
-      "room": "B",
-      "type": "session",
-      "start": "14:00",
-      "end": "15:30",
-      "sessionId": "B11"
-    },
-    {
-      "day": "2026-11-12",
-      "room": "all",
-      "type": "break",
-      "start": "15:30",
-      "end": "16:00",
-      "title": "Coffee break"
-    },
-    {
-      "day": "2026-11-12",
-      "room": "A",
-      "type": "session",
-      "start": "16:00",
-      "end": "17:30",
-      "sessionId": "A12"
-    },
-    {
-      "day": "2026-11-12",
-      "room": "B",
-      "type": "session",
-      "start": "16:00",
-      "end": "17:30",
-      "sessionId": "B12"
-    },
-    {
-      "day": "2026-11-13",
-      "room": "all",
-      "type": "break",
-      "start": "08:30",
-      "end": "09:00",
-      "title": "Registration & welcome coffee"
-    },
-    {
-      "day": "2026-11-13",
-      "room": "A",
-      "type": "keynote",
-      "start": "09:00",
-      "end": "10:30",
-      "title": "[Keynote title]",
-      "speaker": "[Speaker name]"
-    },
-    {
-      "day": "2026-11-13",
-      "room": "B",
-      "type": "session",
-      "start": "09:00",
-      "end": "10:30",
-      "sessionId": "B13"
-    },
-    {
-      "day": "2026-11-13",
-      "room": "all",
-      "type": "break",
-      "start": "10:30",
-      "end": "11:00",
-      "title": "Coffee break"
-    },
-    {
-      "day": "2026-11-13",
-      "room": "A",
-      "type": "session",
-      "start": "11:00",
-      "end": "12:30",
-      "sessionId": "A14"
-    },
-    {
-      "day": "2026-11-13",
-      "room": "B",
-      "type": "session",
-      "start": "11:00",
-      "end": "12:30",
-      "sessionId": "B14"
-    },
-    {
-      "day": "2026-11-13",
-      "room": "all",
-      "type": "break",
-      "start": "12:30",
-      "end": "14:00",
-      "title": "Lunch"
-    },
-    {
-      "day": "2026-11-13",
-      "room": "A",
-      "type": "session",
-      "start": "14:00",
-      "end": "15:30",
-      "sessionId": "A15"
-    },
-    {
-      "day": "2026-11-13",
-      "room": "B",
-      "type": "session",
-      "start": "14:00",
-      "end": "15:30",
-      "sessionId": "B15"
-    },
-    {
-      "day": "2026-11-13",
-      "room": "all",
-      "type": "break",
-      "start": "15:30",
-      "end": "16:00",
-      "title": "Coffee break"
-    },
-    {
-      "day": "2026-11-13",
-      "room": "A",
-      "type": "session",
-      "start": "16:00",
-      "end": "17:30",
-      "sessionId": "A16"
-    },
-    {
-      "day": "2026-11-13",
-      "room": "B",
-      "type": "session",
-      "start": "16:00",
-      "end": "17:30",
-      "sessionId": "B16"
-    },
-    {
-      "day": "2026-11-13",
-      "room": "A",
       "type": "plenary",
+      "start": "09:00",
+      "end": "09:30",
+      "showInAllRooms": true,
+      "title": "Opening"
+    },
+    {
+      "day": "2026-11-11",
+      "room": "B",
+      "type": "keynote",
+      "start": "09:30",
+      "end": "10:30",
+      "showInAllRooms": true,
+      "speaker": "Andrea Passarella"
+    },
+    {
+      "day": "2026-11-11",
+      "room": "all",
+      "type": "break",
+      "start": "10:30",
+      "end": "11:00",
+      "title": "Coffee Break"
+    },
+    {
+      "day": "2026-11-11",
+      "room": "B",
+      "type": "session",
+      "start": "11:00",
+      "end": "12:30",
+      "sessionId": "s1"
+    },
+    {
+      "day": "2026-11-11",
+      "room": "all",
+      "type": "break",
+      "start": "12:30",
+      "end": "13:30",
+      "title": "Light Lunch"
+    },
+    {
+      "day": "2026-11-11",
+      "room": "B",
+      "type": "session",
+      "start": "13:30",
+      "end": "15:00",
+      "sessionId": "s2"
+    },
+    {
+      "day": "2026-11-11",
+      "room": "all",
+      "type": "break",
+      "start": "15:00",
+      "end": "15:30",
+      "title": "Coffee Break"
+    },
+    {
+      "day": "2026-11-11",
+      "room": "B",
+      "type": "session",
+      "start": "15:30",
+      "end": "17:00",
+      "sessionId": "s3"
+    },
+    {
+      "day": "2026-11-11",
+      "room": "A",
+      "type": "session",
+      "start": "15:30",
+      "end": "17:00",
+      "sessionId": "phd-forum"
+    },
+    {
+      "day": "2026-11-11",
+      "room": "all",
+      "type": "social",
+      "start": "17:00",
+      "end": "18:30",
+      "title": "Group 1: Pupi · Group 2: Train"
+    },
+    {
+      "day": "2026-11-11",
+      "room": "all",
+      "type": "social",
+      "start": "18:30",
+      "end": "20:00",
+      "title": "Group 1: Train · Group 2: Pupi"
+    },
+    {
+      "day": "2026-11-12",
+      "room": "all",
+      "type": "break",
+      "start": "08:30",
+      "end": "09:00",
+      "title": "Registration"
+    },
+    {
+      "day": "2026-11-12",
+      "room": "B",
+      "type": "keynote",
+      "start": "09:00",
+      "end": "10:00",
+      "showInAllRooms": true,
+      "speaker": "Serge Fdida"
+    },
+    {
+      "day": "2026-11-12",
+      "room": "all",
+      "type": "break",
+      "start": "10:00",
+      "end": "10:30",
+      "title": "Coffee Break"
+    },
+    {
+      "day": "2026-11-12",
+      "room": "B",
+      "type": "session",
+      "start": "10:30",
+      "end": "13:00",
+      "sessionId": "industry"
+    },
+    {
+      "day": "2026-11-12",
+      "room": "A",
+      "type": "session",
+      "start": "10:30",
+      "end": "13:00",
+      "sessionId": "w5"
+    },
+    {
+      "day": "2026-11-12",
+      "room": "all",
+      "type": "break",
+      "start": "13:00",
+      "end": "14:00",
+      "title": "Light Lunch"
+    },
+    {
+      "day": "2026-11-12",
+      "room": "B",
+      "type": "session",
+      "start": "14:00",
+      "end": "15:30",
+      "sessionId": "s4"
+    },
+    {
+      "day": "2026-11-12",
+      "room": "A",
+      "type": "session",
+      "start": "14:00",
+      "end": "15:30",
+      "sessionId": "w6"
+    },
+    {
+      "day": "2026-11-12",
+      "room": "all",
+      "type": "break",
+      "start": "15:30",
+      "end": "16:00",
+      "title": "Coffee Break"
+    },
+    {
+      "day": "2026-11-12",
+      "room": "B",
+      "type": "session",
+      "start": "16:00",
+      "end": "17:30",
+      "sessionId": "s5"
+    },
+    {
+      "day": "2026-11-12",
+      "room": "A",
+      "type": "session",
+      "start": "16:00",
+      "end": "17:30",
+      "sessionId": "w6"
+    },
+    {
+      "day": "2026-11-12",
+      "room": "all",
+      "type": "social",
       "start": "17:30",
-      "end": "18:00",
-      "title": "Closing & best paper awards",
-      "speaker": "[Chairs]"
+      "end": "19:30",
+      "title": "Guided Tour of Ortigia"
+    },
+    {
+      "day": "2026-11-12",
+      "room": "all",
+      "type": "social",
+      "start": "21:00",
+      "end": "23:30",
+      "title": "Social Gala Dinner"
+    },
+    {
+      "day": "2026-11-13",
+      "room": "all",
+      "type": "break",
+      "start": "08:30",
+      "end": "09:00",
+      "title": "Registration"
+    },
+    {
+      "day": "2026-11-13",
+      "room": "B",
+      "type": "session",
+      "start": "09:00",
+      "end": "10:30",
+      "sessionId": "s6"
+    },
+    {
+      "day": "2026-11-13",
+      "room": "A",
+      "type": "session",
+      "start": "09:00",
+      "end": "10:30",
+      "sessionId": "w7"
+    },
+    {
+      "day": "2026-11-13",
+      "room": "all",
+      "type": "break",
+      "start": "10:30",
+      "end": "11:00",
+      "title": "Coffee Break"
+    },
+    {
+      "day": "2026-11-13",
+      "room": "B",
+      "type": "session",
+      "start": "11:00",
+      "end": "12:30",
+      "sessionId": "s7"
+    },
+    {
+      "day": "2026-11-13",
+      "room": "A",
+      "type": "session",
+      "start": "11:00",
+      "end": "12:30",
+      "sessionId": "w7"
+    },
+    {
+      "day": "2026-11-13",
+      "room": "B",
+      "type": "keynote",
+      "start": "12:30",
+      "end": "13:30",
+      "showInAllRooms": true,
+      "speaker": "Lance Fiondella"
+    },
+    {
+      "day": "2026-11-13",
+      "room": "all",
+      "type": "break",
+      "start": "13:30",
+      "end": "14:30",
+      "title": "Light Lunch"
+    },
+    {
+      "day": "2026-11-13",
+      "room": "B",
+      "type": "session",
+      "start": "14:30",
+      "end": "16:00",
+      "sessionId": "s8"
+    },
+    {
+      "day": "2026-11-13",
+      "room": "A",
+      "type": "session",
+      "start": "14:30",
+      "end": "16:00",
+      "sessionId": "w8"
+    },
+    {
+      "day": "2026-11-13",
+      "room": "all",
+      "type": "break",
+      "start": "16:00",
+      "end": "16:30",
+      "title": "Coffee Break"
+    },
+    {
+      "day": "2026-11-13",
+      "room": "B",
+      "type": "session",
+      "start": "16:30",
+      "end": "18:30",
+      "sessionId": "s9"
+    },
+    {
+      "day": "2026-11-13",
+      "room": "A",
+      "type": "session",
+      "start": "16:30",
+      "end": "18:30",
+      "sessionId": "demo-poster"
+    },
+    {
+      "day": "2026-11-13",
+      "room": "B",
+      "type": "plenary",
+      "start": "18:30",
+      "end": "18:45",
+      "showInAllRooms": true,
+      "title": "Closing Remarks"
     }
   ]
 }
