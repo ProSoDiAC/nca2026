@@ -36,7 +36,7 @@ export const strings = {
     whereTitle: 'Where',
     venueName: 'Siracusa Urban Center – Congress Venue',
     venueAddress: 'Via Nino Bixio 1, 96100 Siracusa (SR), Sicily',
-    mapsUrl: 'https://www.google.com/maps/place/Syracuse+Urban+Center+congresso',
+    mapsUrl: 'https://www.google.com/maps/place//data=!4m2!3m1!1s0x1313cc206216d8ed:0xc8a4f92bcc603f61',
     latestNews: 'Latest news',
     seeAll: 'See all',
     sponsorsTitle: 'Sponsors & patronage',
