@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>NCA 2026 Sessions</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; display: flex; flex-direction: column; background: #F4F7F8; color: #0A2540; font-family: 'Inter', system-ui, sans-serif; overflow: hidden">
+
+<div style="padding: 28px 20px 12px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; flex-direction: column; gap: 2px">
+<h1 style="margin: 0; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 28px">Chairs &amp; papers</h1>
+<div style="font-size: 13.5px; color: #4A5B6B">Sessions with their chair and paper list</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px">
+<sc-for list="{{days}}" as="d" hint-placeholder-count="4">
+<button onClick="{{ d.pick }}" aria-pressed="{{ d.selected }}" style="min-height: 44px; border: 0; border-radius: 12px; background: {{d.bg}}; color: {{d.fg}}; font-size: 14px; font-weight: 600; padding: 0">{{d.label}}</button>
+</sc-for>
+</div>
+</div>
+
+<div style="flex: 1; min-height: 0; overflow-y: auto; padding: 4px 20px 20px; display: flex; flex-direction: column; gap: 12px">
+<sc-for list="{{sessions}}" as="s" hint-placeholder-count="4">
+<section style="border-radius: 18px; background: #FFFFFF; overflow: hidden">
+<button onClick="{{ s.toggle }}" aria-expanded="{{ s.open }}" style="width: 100%; box-sizing: border-box; min-height: 72px; border: 0; background: transparent; padding: 14px 16px; display: flex; align-items: center; gap: 12px; text-align: left; color: #0A2540">
+<span style="flex: none; min-width: 40px; padding: 6px 0; border-radius: 10px; background: #DDF0F2; color: #0A5E66; font-size: 13px; font-weight: 600; text-align: center">{{s.code}}</span>
+<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<span style="font-family: 'Sora', sans-serif; font-weight: 600; font-size: 15px">{{s.title}}</span>
+<span style="font-size: 12.5px; color: #4A5B6B">{{s.meta}}</span>
+</span>
+<span style="flex: none; display: flex; transform: {{s.rot}}">
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B4D5E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+</span>
+</button>
+<sc-if value="{{ s.open }}" hint-placeholder-val="{{ false }}">
+<div style="padding: 0 16px 16px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; align-items: center; gap: 12px; padding: 12px; border-radius: 14px; background: #F4F7F8">
+<span style="flex: none; width: 40px; height: 40px; border-radius: 999px; background: #0A2540; display: flex; align-items: center; justify-content: center">
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E8A33D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+</span>
+<span style="display: flex; flex-direction: column; gap: 1px">
+<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: #546574">Session chair</span>
+<span style="font-size: 15px; font-weight: 600">[Chair name]</span>
+<span style="font-size: 13px; color: #4A5B6B">[Affiliation]</span>
+</span>
+</div>
+<div style="display: flex; flex-direction: column">
+<sc-for list="{{s.papers}}" as="p" hint-placeholder-count="4">
+<div style="display: flex; gap: 12px; padding: 12px 0; border-top: 1px solid #E3E9ED">
+<span style="flex: none; width: 44px; font-size: 13px; font-weight: 600; color: #0A5E66">{{p.time}}</span>
+<span style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-size: 14.5px; font-weight: 500; line-height: 1.35">{{p.title}}</span>
+<span style="font-size: 13px; color: #4A5B6B">{{p.authors}}</span>
+</span>
+</div>
+</sc-for>
+</div>
+</div>
+</sc-if>
+</section>
+</sc-for>
+</div>
+
+<nav aria-label="Main" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); background: #FFFFFF; border-top: 1px solid #DCE4E8; padding-bottom: 8px">
+<a href="Main.dc.html" style="min-height: 56px; box-sizing: border-box; border-top: 3px solid transparent; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 11px; font-weight: 500; color: #546574">
+<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>
+Home
+</a>
+<a href="Program.dc.html" style="min-height: 56px; box-sizing: border-box; border-top: 3px solid transparent; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 11px; font-weight: 500; color: #546574">
+<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+Program
+</a>
+<a href="News.dc.html" style="min-height: 56px; box-sizing: border-box; border-top: 3px solid transparent; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 11px; font-weight: 500; color: #546574">
+<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>
+News
+</a>
+<a href="Sessions.dc.html" style="min-height: 56px; box-sizing: border-box; border-top: 3px solid #0E7C86; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 11px; font-weight: 600; color: #0A2540">
+<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M17 14c2.8 0 5 2.2 5 5"/></svg>
+Sessions
+</a>
+</nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+const st = this.state || {};
+const day = st.day || 10;
+const open = st.open === undefined ? 'A2' : st.open;
+const dows = { 10: 'Tue', 11: 'Wed', 12: 'Thu', 13: 'Fri' };
+const days = [10, 11, 12, 13].map((d) => ({
+label: dows[d] + ' ' + d,
+selected: d === day,
+bg: d === day ? '#0A2540' : '#FFFFFF',
+fg: d === day ? '#FFFFFF' : '#0A2540',
+pick: () => this.setState({ day: d, open: null })
+}));
+const base = (day - 10) * 4;
+const defs = [
+{ n: base + 2, room: 'A', start: [11, 0], span: '11:00 – 12:30' },
+{ n: base + 2, room: 'B', start: [11, 0], span: '11:00 – 12:30' },
+{ n: base + 3, room: 'A', start: [14, 0], span: '14:00 – 15:30' },
+{ n: base + 3, room: 'B', start: [14, 0], span: '14:00 – 15:30' }
+];
+const pad = (x) => (x < 10 ? '0' + x : String(x));
+const sessions = defs.map((df) => {
+const code = df.room + df.n;
+const isOpen = open === code;
+const papers = [0, 1, 2, 3].map((k) => {
+const total = df.start[0] * 60 + df.start[1] + k * 20;
+return {
+time: pad(Math.floor(total / 60)) + ':' + pad(total % 60),
+title: '[Paper title ' + (k + 1) + ']',
+authors: '[Author names]'
+};
+});
+return {
+code,
+title: '[Session title]',
+meta: dows[day] + ' ' + day + ' · ' + df.span + ' · Sala ' + df.room,
+open: isOpen,
+rot: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
+papers,
+toggle: () => this.setState({ open: isOpen ? null : code })
+};
+});
+return { days, sessions };
+}
+}
+</script>
+</body>
+</html>

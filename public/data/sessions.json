@@ -1,0 +1,956 @@
+{
+  "sessions": [
+    {
+      "id": "B1",
+      "day": "2026-11-10",
+      "room": "B",
+      "start": "09:00",
+      "end": "10:30",
+      "title": "[Session title]",
+      "chair": {
+        "name": "[Chair name]",
+        "affiliation": "[Affiliation]"
+      },
+      "papers": [
+        {
+          "time": "09:00",
+          "title": "[Paper title 1]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "09:20",
+          "title": "[Paper title 2]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "09:40",
+          "title": "[Paper title 3]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "10:00",
+          "title": "[Paper title 4]",
+          "authors": "[Author names]"
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "day": "2026-11-10",
+      "room": "A",
+      "start": "11:00",
+      "end": "12:30",
+      "title": "[Session title]",
+      "chair": {
+        "name": "[Chair name]",
+        "affiliation": "[Affiliation]"
+      },
+      "papers": [
+        {
+          "time": "11:00",
+          "title": "[Paper title 1]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "11:20",
+          "title": "[Paper title 2]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "11:40",
+          "title": "[Paper title 3]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "12:00",
+          "title": "[Paper title 4]",
+          "authors": "[Author names]"
+        }
+      ]
+    },
+    {
+      "id": "B2",
+      "day": "2026-11-10",
+      "room": "B",
+      "start": "11:00",
+      "end": "12:30",
+      "title": "[Session title]",
+      "chair": {
+        "name": "[Chair name]",
+        "affiliation": "[Affiliation]"
+      },
+      "papers": [
+        {
+          "time": "11:00",
+          "title": "[Paper title 1]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "11:20",
+          "title": "[Paper title 2]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "11:40",
+          "title": "[Paper title 3]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "12:00",
+          "title": "[Paper title 4]",
+          "authors": "[Author names]"
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "day": "2026-11-10",
+      "room": "A",
+      "start": "14:00",
+      "end": "15:30",
+      "title": "[Session title]",
+      "chair": {
+        "name": "[Chair name]",
+        "affiliation": "[Affiliation]"
+      },
+      "papers": [
+        {
+          "time": "14:00",
+          "title": "[Paper title 1]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "14:20",
+          "title": "[Paper title 2]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "14:40",
+          "title": "[Paper title 3]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "15:00",
+          "title": "[Paper title 4]",
+          "authors": "[Author names]"
+        }
+      ]
+    },
+    {
+      "id": "B3",
+      "day": "2026-11-10",
+      "room": "B",
+      "start": "14:00",
+      "end": "15:30",
+      "title": "[Session title]",
+      "chair": {
+        "name": "[Chair name]",
+        "affiliation": "[Affiliation]"
+      },
+      "papers": [
+        {
+          "time": "14:00",
+          "title": "[Paper title 1]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "14:20",
+          "title": "[Paper title 2]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "14:40",
+          "title": "[Paper title 3]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "15:00",
+          "title": "[Paper title 4]",
+          "authors": "[Author names]"
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "day": "2026-11-10",
+      "room": "A",
+      "start": "16:00",
+      "end": "17:30",
+      "title": "[Session title]",
+      "chair": {
+        "name": "[Chair name]",
+        "affiliation": "[Affiliation]"
+      },
+      "papers": [
+        {
+          "time": "16:00",
+          "title": "[Paper title 1]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "16:20",
+          "title": "[Paper title 2]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "16:40",
+          "title": "[Paper title 3]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "17:00",
+          "title": "[Paper title 4]",
+          "authors": "[Author names]"
+        }
+      ]
+    },
+    {
+      "id": "B4",
+      "day": "2026-11-10",
+      "room": "B",
+      "start": "16:00",
+      "end": "17:30",
+      "title": "[Session title]",
+      "chair": {
+        "name": "[Chair name]",
+        "affiliation": "[Affiliation]"
+      },
+      "papers": [
+        {
+          "time": "16:00",
+          "title": "[Paper title 1]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "16:20",
+          "title": "[Paper title 2]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "16:40",
+          "title": "[Paper title 3]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "17:00",
+          "title": "[Paper title 4]",
+          "authors": "[Author names]"
+        }
+      ]
+    },
+    {
+      "id": "B5",
+      "day": "2026-11-11",
+      "room": "B",
+      "start": "09:00",
+      "end": "10:30",
+      "title": "[Session title]",
+      "chair": {
+        "name": "[Chair name]",
+        "affiliation": "[Affiliation]"
+      },
+      "papers": [
+        {
+          "time": "09:00",
+          "title": "[Paper title 1]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "09:20",
+          "title": "[Paper title 2]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "09:40",
+          "title": "[Paper title 3]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "10:00",
+          "title": "[Paper title 4]",
+          "authors": "[Author names]"
+        }
+      ]
+    },
+    {
+      "id": "A6",
+      "day": "2026-11-11",
+      "room": "A",
+      "start": "11:00",
+      "end": "12:30",
+      "title": "[Session title]",
+      "chair": {
+        "name": "[Chair name]",
+        "affiliation": "[Affiliation]"
+      },
+      "papers": [
+        {
+          "time": "11:00",
+          "title": "[Paper title 1]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "11:20",
+          "title": "[Paper title 2]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "11:40",
+          "title": "[Paper title 3]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "12:00",
+          "title": "[Paper title 4]",
+          "authors": "[Author names]"
+        }
+      ]
+    },
+    {
+      "id": "B6",
+      "day": "2026-11-11",
+      "room": "B",
+      "start": "11:00",
+      "end": "12:30",
+      "title": "[Session title]",
+      "chair": {
+        "name": "[Chair name]",
+        "affiliation": "[Affiliation]"
+      },
+      "papers": [
+        {
+          "time": "11:00",
+          "title": "[Paper title 1]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "11:20",
+          "title": "[Paper title 2]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "11:40",
+          "title": "[Paper title 3]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "12:00",
+          "title": "[Paper title 4]",
+          "authors": "[Author names]"
+        }
+      ]
+    },
+    {
+      "id": "A7",
+      "day": "2026-11-11",
+      "room": "A",
+      "start": "14:00",
+      "end": "15:30",
+      "title": "[Session title]",
+      "chair": {
+        "name": "[Chair name]",
+        "affiliation": "[Affiliation]"
+      },
+      "papers": [
+        {
+          "time": "14:00",
+          "title": "[Paper title 1]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "14:20",
+          "title": "[Paper title 2]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "14:40",
+          "title": "[Paper title 3]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "15:00",
+          "title": "[Paper title 4]",
+          "authors": "[Author names]"
+        }
+      ]
+    },
+    {
+      "id": "B7",
+      "day": "2026-11-11",
+      "room": "B",
+      "start": "14:00",
+      "end": "15:30",
+      "title": "[Session title]",
+      "chair": {
+        "name": "[Chair name]",
+        "affiliation": "[Affiliation]"
+      },
+      "papers": [
+        {
+          "time": "14:00",
+          "title": "[Paper title 1]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "14:20",
+          "title": "[Paper title 2]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "14:40",
+          "title": "[Paper title 3]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "15:00",
+          "title": "[Paper title 4]",
+          "authors": "[Author names]"
+        }
+      ]
+    },
+    {
+      "id": "A8",
+      "day": "2026-11-11",
+      "room": "A",
+      "start": "16:00",
+      "end": "17:30",
+      "title": "[Session title]",
+      "chair": {
+        "name": "[Chair name]",
+        "affiliation": "[Affiliation]"
+      },
+      "papers": [
+        {
+          "time": "16:00",
+          "title": "[Paper title 1]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "16:20",
+          "title": "[Paper title 2]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "16:40",
+          "title": "[Paper title 3]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "17:00",
+          "title": "[Paper title 4]",
+          "authors": "[Author names]"
+        }
+      ]
+    },
+    {
+      "id": "B8",
+      "day": "2026-11-11",
+      "room": "B",
+      "start": "16:00",
+      "end": "17:30",
+      "title": "[Session title]",
+      "chair": {
+        "name": "[Chair name]",
+        "affiliation": "[Affiliation]"
+      },
+      "papers": [
+        {
+          "time": "16:00",
+          "title": "[Paper title 1]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "16:20",
+          "title": "[Paper title 2]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "16:40",
+          "title": "[Paper title 3]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "17:00",
+          "title": "[Paper title 4]",
+          "authors": "[Author names]"
+        }
+      ]
+    },
+    {
+      "id": "B9",
+      "day": "2026-11-12",
+      "room": "B",
+      "start": "09:00",
+      "end": "10:30",
+      "title": "[Session title]",
+      "chair": {
+        "name": "[Chair name]",
+        "affiliation": "[Affiliation]"
+      },
+      "papers": [
+        {
+          "time": "09:00",
+          "title": "[Paper title 1]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "09:20",
+          "title": "[Paper title 2]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "09:40",
+          "title": "[Paper title 3]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "10:00",
+          "title": "[Paper title 4]",
+          "authors": "[Author names]"
+        }
+      ]
+    },
+    {
+      "id": "A10",
+      "day": "2026-11-12",
+      "room": "A",
+      "start": "11:00",
+      "end": "12:30",
+      "title": "[Session title]",
+      "chair": {
+        "name": "[Chair name]",
+        "affiliation": "[Affiliation]"
+      },
+      "papers": [
+        {
+          "time": "11:00",
+          "title": "[Paper title 1]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "11:20",
+          "title": "[Paper title 2]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "11:40",
+          "title": "[Paper title 3]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "12:00",
+          "title": "[Paper title 4]",
+          "authors": "[Author names]"
+        }
+      ]
+    },
+    {
+      "id": "B10",
+      "day": "2026-11-12",
+      "room": "B",
+      "start": "11:00",
+      "end": "12:30",
+      "title": "[Session title]",
+      "chair": {
+        "name": "[Chair name]",
+        "affiliation": "[Affiliation]"
+      },
+      "papers": [
+        {
+          "time": "11:00",
+          "title": "[Paper title 1]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "11:20",
+          "title": "[Paper title 2]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "11:40",
+          "title": "[Paper title 3]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "12:00",
+          "title": "[Paper title 4]",
+          "authors": "[Author names]"
+        }
+      ]
+    },
+    {
+      "id": "A11",
+      "day": "2026-11-12",
+      "room": "A",
+      "start": "14:00",
+      "end": "15:30",
+      "title": "[Session title]",
+      "chair": {
+        "name": "[Chair name]",
+        "affiliation": "[Affiliation]"
+      },
+      "papers": [
+        {
+          "time": "14:00",
+          "title": "[Paper title 1]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "14:20",
+          "title": "[Paper title 2]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "14:40",
+          "title": "[Paper title 3]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "15:00",
+          "title": "[Paper title 4]",
+          "authors": "[Author names]"
+        }
+      ]
+    },
+    {
+      "id": "B11",
+      "day": "2026-11-12",
+      "room": "B",
+      "start": "14:00",
+      "end": "15:30",
+      "title": "[Session title]",
+      "chair": {
+        "name": "[Chair name]",
+        "affiliation": "[Affiliation]"
+      },
+      "papers": [
+        {
+          "time": "14:00",
+          "title": "[Paper title 1]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "14:20",
+          "title": "[Paper title 2]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "14:40",
+          "title": "[Paper title 3]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "15:00",
+          "title": "[Paper title 4]",
+          "authors": "[Author names]"
+        }
+      ]
+    },
+    {
+      "id": "A12",
+      "day": "2026-11-12",
+      "room": "A",
+      "start": "16:00",
+      "end": "17:30",
+      "title": "[Session title]",
+      "chair": {
+        "name": "[Chair name]",
+        "affiliation": "[Affiliation]"
+      },
+      "papers": [
+        {
+          "time": "16:00",
+          "title": "[Paper title 1]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "16:20",
+          "title": "[Paper title 2]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "16:40",
+          "title": "[Paper title 3]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "17:00",
+          "title": "[Paper title 4]",
+          "authors": "[Author names]"
+        }
+      ]
+    },
+    {
+      "id": "B12",
+      "day": "2026-11-12",
+      "room": "B",
+      "start": "16:00",
+      "end": "17:30",
+      "title": "[Session title]",
+      "chair": {
+        "name": "[Chair name]",
+        "affiliation": "[Affiliation]"
+      },
+      "papers": [
+        {
+          "time": "16:00",
+          "title": "[Paper title 1]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "16:20",
+          "title": "[Paper title 2]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "16:40",
+          "title": "[Paper title 3]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "17:00",
+          "title": "[Paper title 4]",
+          "authors": "[Author names]"
+        }
+      ]
+    },
+    {
+      "id": "B13",
+      "day": "2026-11-13",
+      "room": "B",
+      "start": "09:00",
+      "end": "10:30",
+      "title": "[Session title]",
+      "chair": {
+        "name": "[Chair name]",
+        "affiliation": "[Affiliation]"
+      },
+      "papers": [
+        {
+          "time": "09:00",
+          "title": "[Paper title 1]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "09:20",
+          "title": "[Paper title 2]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "09:40",
+          "title": "[Paper title 3]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "10:00",
+          "title": "[Paper title 4]",
+          "authors": "[Author names]"
+        }
+      ]
+    },
+    {
+      "id": "A14",
+      "day": "2026-11-13",
+      "room": "A",
+      "start": "11:00",
+      "end": "12:30",
+      "title": "[Session title]",
+      "chair": {
+        "name": "[Chair name]",
+        "affiliation": "[Affiliation]"
+      },
+      "papers": [
+        {
+          "time": "11:00",
+          "title": "[Paper title 1]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "11:20",
+          "title": "[Paper title 2]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "11:40",
+          "title": "[Paper title 3]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "12:00",
+          "title": "[Paper title 4]",
+          "authors": "[Author names]"
+        }
+      ]
+    },
+    {
+      "id": "B14",
+      "day": "2026-11-13",
+      "room": "B",
+      "start": "11:00",
+      "end": "12:30",
+      "title": "[Session title]",
+      "chair": {
+        "name": "[Chair name]",
+        "affiliation": "[Affiliation]"
+      },
+      "papers": [
+        {
+          "time": "11:00",
+          "title": "[Paper title 1]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "11:20",
+          "title": "[Paper title 2]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "11:40",
+          "title": "[Paper title 3]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "12:00",
+          "title": "[Paper title 4]",
+          "authors": "[Author names]"
+        }
+      ]
+    },
+    {
+      "id": "A15",
+      "day": "2026-11-13",
+      "room": "A",
+      "start": "14:00",
+      "end": "15:30",
+      "title": "[Session title]",
+      "chair": {
+        "name": "[Chair name]",
+        "affiliation": "[Affiliation]"
+      },
+      "papers": [
+        {
+          "time": "14:00",
+          "title": "[Paper title 1]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "14:20",
+          "title": "[Paper title 2]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "14:40",
+          "title": "[Paper title 3]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "15:00",
+          "title": "[Paper title 4]",
+          "authors": "[Author names]"
+        }
+      ]
+    },
+    {
+      "id": "B15",
+      "day": "2026-11-13",
+      "room": "B",
+      "start": "14:00",
+      "end": "15:30",
+      "title": "[Session title]",
+      "chair": {
+        "name": "[Chair name]",
+        "affiliation": "[Affiliation]"
+      },
+      "papers": [
+        {
+          "time": "14:00",
+          "title": "[Paper title 1]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "14:20",
+          "title": "[Paper title 2]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "14:40",
+          "title": "[Paper title 3]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "15:00",
+          "title": "[Paper title 4]",
+          "authors": "[Author names]"
+        }
+      ]
+    },
+    {
+      "id": "A16",
+      "day": "2026-11-13",
+      "room": "A",
+      "start": "16:00",
+      "end": "17:30",
+      "title": "[Session title]",
+      "chair": {
+        "name": "[Chair name]",
+        "affiliation": "[Affiliation]"
+      },
+      "papers": [
+        {
+          "time": "16:00",
+          "title": "[Paper title 1]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "16:20",
+          "title": "[Paper title 2]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "16:40",
+          "title": "[Paper title 3]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "17:00",
+          "title": "[Paper title 4]",
+          "authors": "[Author names]"
+        }
+      ]
+    },
+    {
+      "id": "B16",
+      "day": "2026-11-13",
+      "room": "B",
+      "start": "16:00",
+      "end": "17:30",
+      "title": "[Session title]",
+      "chair": {
+        "name": "[Chair name]",
+        "affiliation": "[Affiliation]"
+      },
+      "papers": [
+        {
+          "time": "16:00",
+          "title": "[Paper title 1]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "16:20",
+          "title": "[Paper title 2]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "16:40",
+          "title": "[Paper title 3]",
+          "authors": "[Author names]"
+        },
+        {
+          "time": "17:00",
+          "title": "[Paper title 4]",
+          "authors": "[Author names]"
+        }
+      ]
+    }
+  ]
+}
