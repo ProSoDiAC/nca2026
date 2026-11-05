@@ -70,6 +70,8 @@ export const strings = {
     noResults: 'No sessions match your search.',
     empty: 'No sessions on this day.',
     chair: 'Session chair',
+    chairs: 'Session chairs',
+    tbc: 'To be confirmed',
     papersTba: 'The paper list will be published soon.',
     notFound: (id: string) => `Session ${id} was not found.`,
   },

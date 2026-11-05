@@ -29,6 +29,8 @@ export const programSchema = z.object({
   ),
 });
 
+const person = z.object({ name: z.string(), affiliation: z.string().optional(), tbc: z.boolean().optional() });
+
 export const sessionsSchema = z.object({
   sessions: z.array(
     z.object({
@@ -43,7 +45,8 @@ export const sessionsSchema = z.object({
       /** When a session is split by a break (e.g. a workshop over two slots). */
       slots: z.array(z.object({ start: hhmm, end: hhmm })).optional(),
       title: z.string(),
-      chair: z.object({ name: z.string(), affiliation: z.string().optional() }).nullable().optional(),
+      /** One chair, or a list when a session has more than one. `tbc: true` = not yet confirmed. */
+      chair: z.union([person, z.array(person)]).nullable().optional(),
       /**
        * The session's running order. Items without `kind` (or kind "paper") are papers;
        * workshops can also list headings (sub-sessions), keynotes, talks (opening/closing) and breaks.
@@ -78,5 +81,7 @@ export type Program = z.infer<typeof programSchema>;
 export type ProgramEntry = Program['entries'][number];
 export type Session = z.infer<typeof sessionsSchema>['sessions'][number];
 export type SessionItem = Session['papers'][number];
+export type Chair = z.infer<typeof person>;
+export const chairsOf = (s: Session): Chair[] => (!s.chair ? [] : Array.isArray(s.chair) ? s.chair : [s.chair]);
 export const isPaper = (p: SessionItem) => !p.kind || p.kind === 'paper';
 export type NewsItem = z.infer<typeof newsSchema>['news'][number];

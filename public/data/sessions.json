@@ -279,7 +279,10 @@
       "start": "11:00",
       "end": "12:30",
       "title": "Network Protocols, Configuration & Management",
-      "chair": null,
+      "chair": {
+        "name": "Giovanni Merlino",
+        "affiliation": "University of Messina, Italy"
+      },
       "papers": [
         {
           "title": "Protocol-Storage Co-Design for Efficient Range-Based Set Reconciliation",
@@ -308,7 +311,10 @@
       "start": "13:30",
       "end": "15:00",
       "title": "Federated & Distributed Learning at the Edge",
-      "chair": null,
+      "chair": {
+        "name": "Stefano Secci",
+        "affiliation": "Cnam, France"
+      },
       "papers": [
         {
           "title": "A Decentralized Co-Evolutionary SAC Framework for Adaptive Fuzzy Clustering in FANETs",
@@ -337,7 +343,10 @@
       "start": "15:30",
       "end": "17:00",
       "title": "Cloud-Edge Resource Management & Scheduling",
-      "chair": null,
+      "chair": {
+        "name": "Francesco Gargiulo",
+        "affiliation": "ICAR-CNR, Italy"
+      },
       "papers": [
         {
           "title": "Adaptive Warm-State Retention for Serverless Cold-Start Mitigation: Treating Keep-Alive Time as an Online Control Parameter",
@@ -366,7 +375,10 @@
       "start": "15:30",
       "end": "17:00",
       "title": "PhD Forum",
-      "chair": null,
+      "chair": {
+        "name": "Luca D'Agati",
+        "affiliation": "University of Messina, Italy"
+      },
       "papers": [
         {
           "title": "PhD Forum: Measuring Circuit-Invariant Website Fingerprintability in Tor",
@@ -391,7 +403,10 @@
       "start": "10:30",
       "end": "13:00",
       "title": "Industry Track",
-      "chair": null,
+      "chair": {
+        "name": "Giovanni Frattini",
+        "affiliation": "Meditech, Italy"
+      },
       "papers": [
         {
           "title": "From cloud-centric IoT monitoring to federated edge intelligence for critical asset monitoring",
@@ -457,7 +472,10 @@
       "start": "14:00",
       "end": "15:30",
       "title": "Blockchain, Decentralized Trust & Identity",
-      "chair": null,
+      "chair": {
+        "name": "Miguel Correia",
+        "affiliation": "University of Lisboa, Portugal"
+      },
       "papers": [
         {
           "title": "A Modular CBDC Interoperability Framework for Cross-Ledger Transactions",
@@ -512,7 +530,17 @@
       "start": "16:00",
       "end": "17:30",
       "title": "High-Performance & Emerging Computing Systems",
-      "chair": null,
+      "chair": [
+        {
+          "name": "Stefano Silvestri",
+          "affiliation": "ICAR-CNR, Italy"
+        },
+        {
+          "name": "Adel Ben Mnaouer",
+          "affiliation": "University of Prince Mugrin, Saudi Arabia",
+          "tbc": true
+        }
+      ],
       "papers": [
         {
           "title": "DAHL: Energy-Efficient Machine Learning on Heterogeneous CPU using Task-based Programming",
@@ -541,7 +569,11 @@
       "start": "09:00",
       "end": "10:30",
       "title": "Network Traffic Analysis, Engineering & Security",
-      "chair": null,
+      "chair": {
+        "name": "Petrica Pop Sitar",
+        "affiliation": "Technical University of Cluj-Napoca, Romania",
+        "tbc": true
+      },
       "papers": [
         {
           "title": "Challenging the HMAC Ubiquity in Web Authentication Tokens",
@@ -592,7 +624,10 @@
       "start": "11:00",
       "end": "12:30",
       "title": "Intelligent Cyber-Physical, Energy & IoT Systems",
-      "chair": null,
+      "chair": {
+        "name": "Krishna Kant",
+        "affiliation": "Temple University, USA"
+      },
       "papers": [
         {
           "title": "Resilience-Aware Orchestration of Cyber Recovery and Maintenance in Distributed CPS",
@@ -621,7 +656,10 @@
       "start": "14:30",
       "end": "16:00",
       "title": "Wireless, IoT & V2X Networking",
-      "chair": null,
+      "chair": {
+        "name": "Riccardo Lancellotti",
+        "affiliation": "University of Modena and Reggio Emilia, Italy"
+      },
       "papers": [
         {
           "title": "A Circular Low-Power Wi-Fi Access Point based on a Repurposed Smartphone",
@@ -662,7 +700,10 @@
       "start": "16:30",
       "end": "18:30",
       "title": "Security, Intrusion Detection & Threat Intelligence",
-      "chair": null,
+      "chair": {
+        "name": "Francesco Longo",
+        "affiliation": "University of Messina, Italy"
+      },
       "papers": [
         {
           "title": "ZTSF: A Zero-Trust Semantic Firewall for Mitigating NBI-Level Switch Relay Attacks in SDN",

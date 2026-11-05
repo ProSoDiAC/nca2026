@@ -54,7 +54,7 @@ Find the session by `id` in `public/data/sessions.json` and fill `chair` and `pa
 }
 ```
 
-`time`, `end` and `affiliation` are optional.
+`time`, `end` and `affiliation` are optional. A session with two chairs takes a list: `"chair": [{...}, {...}]`. Add `"tbc": true` to a chair not yet confirmed: the app shows "To be confirmed" under the name.
 
 A workshop with its own running order can mix other items into `papers` with a `kind`:
 

@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import { useData } from '../lib/data';
 import { initialDay, rememberDay } from '../lib/initialDay';
 import { dayNumber } from '../lib/dates';
-import type { Session, SessionItem } from '../lib/schema';
+import { chairsOf, type Session, type SessionItem } from '../lib/schema';
 import { strings } from '../strings';
 import { PageHeader } from '../components/PageHeader';
 import { DayPicker } from '../components/DayPicker';
@@ -20,7 +20,7 @@ const norm = (x: string) =>
 
 function haystack(s: Session) {
   return norm(
-    [s.id, s.code ?? '', s.title, s.chair?.name ?? '', s.chair?.affiliation ?? '', ...s.papers.flatMap((p) => [p.title, p.authors ?? ''])].join(' \n '),
+    [s.id, s.code ?? '', s.title, ...chairsOf(s).flatMap((c) => [c.name, c.affiliation ?? '']), ...s.papers.flatMap((p) => [p.title, p.authors ?? ''])].join(' \n '),
   );
 }
 
@@ -173,17 +173,24 @@ function SessionItem({ session: s, dow, open, onToggle }: { session: Session; do
       </h2>
       {open && (
         <div id={panelId} className="flex flex-col gap-3.5 px-4 pb-4">
-          {s.chair && (
-          <div className="flex items-center gap-3 rounded-[14px] bg-page p-3">
-            <span className="flex h-10 w-10 flex-none items-center justify-center rounded-chip bg-night text-ochre">
-              <IconPerson size={20} />
-            </span>
-            <span className="flex flex-col gap-px">
-              <span className="text-xs font-semibold uppercase tracking-[0.05em] text-tab">{t.chair}</span>
-              <span className="text-[15px] font-semibold">{s.chair.name}</span>
-              {s.chair.affiliation && <span className="text-[13px] text-muted">{s.chair.affiliation}</span>}
-            </span>
-          </div>
+          {chairsOf(s).length > 0 && (
+            <div className="flex flex-col gap-2.5 rounded-[14px] bg-page p-3">
+              <span className="text-xs font-semibold uppercase tracking-[0.05em] text-tab">
+                {chairsOf(s).length > 1 ? t.chairs : t.chair}
+              </span>
+              {chairsOf(s).map((c) => (
+                <div key={c.name} className="flex items-center gap-3">
+                  <span className="flex h-10 w-10 flex-none items-center justify-center rounded-chip bg-night text-ochre">
+                    <IconPerson size={20} />
+                  </span>
+                  <span className="flex flex-col gap-px">
+                    <span className="text-[15px] font-semibold">{c.name}</span>
+                    {c.affiliation && <span className="text-[13px] text-muted">{c.affiliation}</span>}
+                    {c.tbc && <span className="text-xs font-semibold text-ochre-text">{t.tbc}</span>}
+                  </span>
+                </div>
+              ))}
+            </div>
           )}
           {s.papers.length === 0 && <p className="m-0 text-sm text-muted">{t.papersTba}</p>}
           <ol className="m-0 flex list-none flex-col p-0">

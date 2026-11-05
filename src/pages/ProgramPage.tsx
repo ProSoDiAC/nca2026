@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useData } from '../lib/data';
 import { initialDay, rememberDay } from '../lib/initialDay';
 import { readStore, writeStore } from '../lib/storage';
-import { isPaper, type ProgramEntry } from '../lib/schema';
+import { chairsOf, isPaper, type ProgramEntry } from '../lib/schema';
 import { strings } from '../strings';
 import { PageHeader } from '../components/PageHeader';
 import { DayPicker } from '../components/DayPicker';
@@ -145,7 +145,7 @@ function ProgramRow({
           </div>
           <div className="font-sora text-[15px] font-semibold leading-[1.3]">{session?.title ?? ''}</div>
           <div className="flex items-center justify-between gap-2 text-[13px] text-sub">
-            <span className="min-w-0">{session?.chair ? `${t.chairPrefix}${session.chair.name}` : ''}</span>
+            <span className="min-w-0">{session && chairsOf(session).length ? `${t.chairPrefix}${chairsOf(session).map((c) => c.name).join(', ')}` : ''}</span>
             <span className="flex flex-none items-center gap-1 font-semibold text-teal-text">
               {n > 0 ? t.papers(n) : t.details}
               <IconChevronRight />
