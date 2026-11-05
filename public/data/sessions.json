@@ -127,7 +127,48 @@
       ],
       "title": "DevOps for the Edge–Cloud Continuum (ContinuumOps)",
       "chair": null,
-      "papers": []
+      "papers": [
+        {
+          "time": "13:15",
+          "end": "13:35",
+          "title": "Local and Cloud-Backend LLM Inference for MCP-Enabled Cyber-Physical Systems"
+        },
+        {
+          "time": "13:37",
+          "end": "13:57",
+          "title": "Authority-Aware Deployment Contracts for Constrained Cyber-Physical Endpoints in the Cloud Continuum"
+        },
+        {
+          "time": "13:59",
+          "end": "14:19",
+          "title": "ScaleBench: An Extensible and Reproducible Experimental Platform for Kubernetes Autoscaling Research"
+        },
+        {
+          "time": "14:21",
+          "end": "14:41",
+          "title": "SP-Core: A Provider-Aware Hierarchical Service Planning for Proactive QoS Stabilization in Vehicular Edge Networks"
+        },
+        {
+          "time": "15:00",
+          "end": "15:20",
+          "title": "Quantum Leader Election for SDN Controller Coordination"
+        },
+        {
+          "time": "15:22",
+          "end": "15:42",
+          "title": "P4Log: High-Throughput Fault-Tolerant Log Replication Through In-Network Coordination"
+        },
+        {
+          "time": "15:44",
+          "end": "16:06",
+          "title": "Mind the Gap: Blockchain Systems Between Theory and Practice"
+        },
+        {
+          "time": "16:08",
+          "end": "16:28",
+          "title": "When to Snapshot: Reconfiguration-Aware Compaction Intervals for Geo-Replicated State Machines"
+        }
+      ]
     },
     {
       "id": "w4",
@@ -149,7 +190,48 @@
       ],
       "title": "First Workshop on Decentralized Ecosystems and Technologies for Emerging Computing Trends (DETECT)",
       "chair": null,
-      "papers": []
+      "papers": [
+        {
+          "kind": "heading",
+          "title": "Session 1: Blockchain and Decentralized Ecosystems"
+        },
+        {
+          "title": "Interpretable Models as Verifiable Oracles: Zero-Knowledge Quality Attestation for Artisanal Food Supply Chains",
+          "authors": "Katiuscia Mannaro, Roberto Tonelli and Alessandro Fanti (University of Cagliari, Italy)"
+        },
+        {
+          "title": "Preserving Metadata Privacy in Decentralized Identity with Homomorphic Encryption",
+          "authors": "Daria Schumm, Gabriel Stegmaier, Cedric von Rauscher, Katharina O. E. Müller, Burkhard Stiller (University of Zürich, Switzerland)"
+        },
+        {
+          "title": "Trading or Gambling: Analyzing Bitcoin Market Profitability and Prediction Accuracy in Polymarket",
+          "authors": "Calogero Turco, Matteo Loporchio (University of Pisa, Italy); Damiano Di Francesco Maesa (University of Pisa, Italy & University of Cambridge, United Kingdom (Great Britain)); Laura Emilia Maria Ricci, Luca Manocchio (University of Pisa, Italy)"
+        },
+        {
+          "title": "Reputation-Driven Storage Governance for Decentralized Knowledge Infrastructure: Ledger-Anchored Verification on the Beez Network",
+          "authors": "Enrico Zanardo (Signum Magnum College, Malta & Universitas Mercatorum, Italy); Barbara Martini and Filippo Sciarrone (Universitas Mercatorum, Italy)"
+        },
+        {
+          "kind": "heading",
+          "title": "Session 2: Emerging Computing Technologies and Applications"
+        },
+        {
+          "title": "A Unified Knowledge-Graph Approach for Identifying APT Behaviors Across Logs and CTI Sources",
+          "authors": "Khaled Rahal (Royal Military Academy, Belgium & Université Libre de Bruxelles, Belgium); Georgi Nikolov (Royal Military Academy, Belgium); Alexandre Vinovrski (Université Libre de Bruxelles, Belgium); Arbia Riahi (Royal Military Academy, Belgium & Cylab - CISS, Belgium); José Carresquel Vera (Royal Military Academy, Belgium)"
+        },
+        {
+          "title": "Mycelium: A Portable Middleware for Virtualizing MCU Endpoints as Federated Learning Clients",
+          "authors": "Domenico Sosta, Ghena Barakat, Giuseppe Tricomi, Francesco Longo and Antonio Puliafito (University of Messina, Italy)"
+        },
+        {
+          "title": "Attention or Convergence? Explaining Apparent Backdoor Robustness in Federated Transformer-Based Intrusion Detection",
+          "authors": "Nagadharsan Dileepkumar and Reshma Raj (Amrita Vishwa Vidyapeetham, India); Ramakrishnan Pitchaimani (Telecom Paris, France); Aina Rasoamanana (Valeo, France)"
+        },
+        {
+          "title": "Marathon: Private Message Routing in a Human-Movement Network - Prototype and Live Experiment",
+          "authors": "Paul Bunn, Chongwon Cho, Sam Dittmer, Steve Lu (Stealth Software Technologies, Inc., USA); Rafail Ostrovsky (University of California, Los Angeles, USA); Micah Sherr (Georgetown University, USA); Ruoxing Yang (University of Virginia, USA); Will Yang (Stealth Software Technologies, Inc., USA)"
+        }
+      ]
     },
     {
       "id": "s1",
