@@ -39,25 +39,35 @@ export function SessionsPage() {
   const [missing] = useState(() => (linked && !linkedSession ? linked : null));
 
   const listRef = useRef<HTMLDivElement>(null);
-  const didScroll = useRef(false);
+  const scrollTo = useRef<string | null>(linkedSession?.id ?? null);
+  const lastOpen = useRef<string | null>(openId);
 
-  // Bring a deep-linked session into view once.
+  // The URL's ?id= changed from outside (back/forward, a new link): follow it.
   useEffect(() => {
-    if (didScroll.current || !linkedSession) return;
-    didScroll.current = true;
-    const el = document.getElementById(`session-${linkedSession.id}`);
+    if (!linkedSession || linkedSession.id === lastOpen.current) return;
+    setDay(linkedSession.day);
+    setQuery('');
+    setOpenId(linkedSession.id);
+    scrollTo.current = linkedSession.id;
+  }, [linkedSession]);
+
+  // Keep ?id= in sync when the user opens/closes a session, so refresh/share keeps it.
+  useEffect(() => {
+    if (lastOpen.current === openId) return;
+    lastOpen.current = openId;
+    if ((params.get('id') ?? null) !== openId) setParams(openId ? { id: openId } : {}, { replace: true });
+  }, [openId, params, setParams]);
+
+  // Bring a deep-linked session into view.
+  useEffect(() => {
+    const id = scrollTo.current;
+    if (!id || openId !== id) return;
+    scrollTo.current = null;
+    const el = document.getElementById(`session-${id}`);
     if (el && listRef.current) {
       listRef.current.scrollTop = el.offsetTop - listRef.current.offsetTop - 4;
     }
-  }, [linkedSession]);
-
-  // Keep ?id= in sync with the open session, so refresh/share keeps it.
-  useEffect(() => {
-    const current = params.get('id');
-    if ((openId ?? null) !== current) {
-      setParams(openId ? { id: openId } : {}, { replace: true });
-    }
-  }, [openId, params, setParams]);
+  }, [openId, day]);
 
   const index = useMemo(() => new Map(sessions.map((s) => [s.id, haystack(s)])), [sessions]);
   const q = norm(query.trim());
