@@ -42,7 +42,70 @@
       ],
       "title": "AI-Driven Distributed Cyber-Physical Systems for Smart Medical Solutions (AiDDRESS-MED)",
       "chair": null,
-      "papers": []
+      "papers": [
+        {
+          "kind": "talk",
+          "time": "09:00",
+          "end": "09:10",
+          "title": "Opening"
+        },
+        {
+          "kind": "keynote",
+          "time": "09:10",
+          "end": "09:50",
+          "title": "Keynote Talk",
+          "authors": "Dr. Stefano Silvestri"
+        },
+        {
+          "kind": "heading",
+          "title": "Session 1: New Architectural Concepts"
+        },
+        {
+          "time": "09:50",
+          "end": "10:10",
+          "title": "Deployment Threats and Federated Poisoning in MedGemma-Based Clinical Infrastructure",
+          "authors": "Fabio Orazio Mirto; Luca D'Agati; Antonio Puliafito; Francesco Longo; Giovanni Merlino"
+        },
+        {
+          "time": "10:10",
+          "end": "10:30",
+          "title": "On-Device Function-Calling Agents for Consumer Health Monitoring: A Multi-Model Pipeline Comparing LoRA and Quantization-Aware Training",
+          "authors": "Luigi Barbato; Salvatore Giugliano; Giovanna Sannino; Francesco Gargiulo"
+        },
+        {
+          "kind": "break",
+          "time": "10:30",
+          "end": "11:00",
+          "title": "Coffee Break"
+        },
+        {
+          "kind": "heading",
+          "title": "Session 2: Solutions"
+        },
+        {
+          "time": "11:00",
+          "end": "11:20",
+          "title": "Secure AI-Assisted Dematerialization of Healthcare Records through Trusted Sensing and Blockchain Traceability",
+          "authors": "Stefano Silvestri; Fabrizio Marangio; Mario Sicuranza; Giuseppe Tricomi; Emanuele Damiano; Mario Ciampi"
+        },
+        {
+          "time": "11:20",
+          "end": "11:40",
+          "title": "A Method for Privacy-Preserving and Explainable Epileptic Seizure Detection by means of Continuous Wavelet Transform and Convolutional Neural Networks",
+          "authors": "Jessica Lucarelli; Mario Cesarelli; Antonella Santone; Fabio Martinelli; Oliver Eigner; Paul Tavolato; Hubert Schölnast; Francesco Mercaldo"
+        },
+        {
+          "time": "11:40",
+          "end": "12:00",
+          "title": "A Comparative Study of Bayesian-Optimized ANN and BiLSTM Models for Epileptic Seizure Detection from EEG Signals Using Original and LC-ADC Representations",
+          "authors": "Raoua Chouikh; Asma Maalej; Manel Ben-Romdhane"
+        },
+        {
+          "kind": "talk",
+          "time": "12:00",
+          "title": "Closing Remarks"
+        }
+      ]
     },
     {
       "id": "w3",

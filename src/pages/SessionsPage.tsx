@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import { useData } from '../lib/data';
 import { initialDay, rememberDay } from '../lib/initialDay';
 import { dayNumber } from '../lib/dates';
-import type { Session } from '../lib/schema';
+import type { Session, SessionItem } from '../lib/schema';
 import { strings } from '../strings';
 import { PageHeader } from '../components/PageHeader';
 import { DayPicker } from '../components/DayPicker';
@@ -20,7 +20,7 @@ const norm = (x: string) =>
 
 function haystack(s: Session) {
   return norm(
-    [s.id, s.code ?? '', s.title, s.chair?.name ?? '', s.chair?.affiliation ?? '', ...s.papers.flatMap((p) => [p.title, p.authors])].join(' \n '),
+    [s.id, s.code ?? '', s.title, s.chair?.name ?? '', s.chair?.affiliation ?? '', ...s.papers.flatMap((p) => [p.title, p.authors ?? ''])].join(' \n '),
   );
 }
 
@@ -178,17 +178,63 @@ function SessionItem({ session: s, dow, open, onToggle }: { session: Session; do
           {s.papers.length === 0 && <p className="m-0 text-sm text-muted">{t.papersTba}</p>}
           <ol className="m-0 flex list-none flex-col p-0">
             {s.papers.map((p, i) => (
-              <li key={i} className="flex gap-3 border-t border-divider py-3">
-                {p.time && <span className="w-11 flex-none text-[13px] font-semibold text-teal-text">{p.time}</span>}
-                <span className="flex min-w-0 flex-col gap-0.5">
-                  <span className="text-[14.5px] font-medium leading-[1.35]">{p.title}</span>
-                  <span className="text-[13px] text-muted">{p.authors}</span>
-                </span>
-              </li>
+              <AgendaRow key={i} item={p} />
             ))}
           </ol>
         </div>
       )}
     </section>
+  );
+}
+
+function AgendaTime({ item }: { item: SessionItem }) {
+  if (!item.time) return null;
+  return (
+    <span className="flex w-11 flex-none flex-col gap-0.5">
+      <span className="text-[13px] font-semibold text-teal-text">{item.time}</span>
+      {item.end && <span className="text-[11.5px] text-tab">{item.end}</span>}
+    </span>
+  );
+}
+
+function AgendaRow({ item: p }: { item: SessionItem }) {
+  if (p.kind === 'heading') {
+    return (
+      <li className="border-t border-divider pb-1 pt-4">
+        <h3 className="m-0 font-sora text-[13px] font-semibold uppercase tracking-[0.05em] text-teal-text">{p.title}</h3>
+      </li>
+    );
+  }
+  if (p.kind === 'break' || p.kind === 'talk') {
+    return (
+      <li className="flex items-baseline gap-3 border-t border-divider py-2.5">
+        <AgendaTime item={p} />
+        <span className="flex min-w-0 flex-col gap-0.5">
+          <span className={`text-[14px] ${p.kind === 'talk' ? 'font-medium text-night' : 'text-sub'}`}>{p.title}</span>
+          {p.authors && <span className="text-[13px] text-muted">{p.authors}</span>}
+        </span>
+      </li>
+    );
+  }
+  if (p.kind === 'keynote') {
+    return (
+      <li className="flex gap-3 border-t border-divider py-3">
+        <AgendaTime item={p} />
+        <span className="flex min-w-0 flex-1 flex-col items-start gap-1.5 rounded-xl bg-ochre-soft p-3">
+          <span className="rounded-chip bg-night px-2 py-0.5 text-[11.5px] font-semibold text-white">{strings.program.keynote}</span>
+          <span className="text-[14.5px] font-medium leading-[1.35]">{p.title}</span>
+          {p.authors && <span className="text-[13px] text-sub">{p.authors}</span>}
+        </span>
+      </li>
+    );
+  }
+  return (
+    <li className="flex gap-3 border-t border-divider py-3">
+      <AgendaTime item={p} />
+      <span className="flex min-w-0 flex-col gap-0.5">
+        <span className="text-[14.5px] font-medium leading-[1.35]">{p.title}</span>
+        {p.authors && <span className="text-[13px] text-muted">{p.authors}</span>}
+      </span>
+    </li>
   );
 }

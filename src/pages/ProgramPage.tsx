@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useData } from '../lib/data';
 import { initialDay, rememberDay } from '../lib/initialDay';
 import { readStore, writeStore } from '../lib/storage';
-import type { ProgramEntry } from '../lib/schema';
+import { isPaper, type ProgramEntry } from '../lib/schema';
 import { strings } from '../strings';
 import { PageHeader } from '../components/PageHeader';
 import { DayPicker } from '../components/DayPicker';
@@ -129,7 +129,7 @@ function ProgramRow({
 
   if (e.type === 'session') {
     const session = sessionsById.get(e.sessionId);
-    const n = session?.papers.length ?? 0;
+    const n = session?.papers.filter(isPaper).length ?? 0;
     return (
       <>
         <TimeCol start={e.start} end={e.end} />

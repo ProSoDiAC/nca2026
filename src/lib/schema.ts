@@ -44,7 +44,19 @@ export const sessionsSchema = z.object({
       slots: z.array(z.object({ start: hhmm, end: hhmm })).optional(),
       title: z.string(),
       chair: z.object({ name: z.string(), affiliation: z.string().optional() }).nullable().optional(),
-      papers: z.array(z.object({ time: hhmm.optional(), title: z.string(), authors: z.string() })),
+      /**
+       * The session's running order. Items without `kind` (or kind "paper") are papers;
+       * workshops can also list headings (sub-sessions), keynotes, talks (opening/closing) and breaks.
+       */
+      papers: z.array(
+        z.object({
+          kind: z.enum(['paper', 'heading', 'keynote', 'talk', 'break']).optional(),
+          time: hhmm.optional(),
+          end: hhmm.optional(),
+          title: z.string(),
+          authors: z.string().optional(),
+        }),
+      ),
     }),
   ),
 });
@@ -65,4 +77,6 @@ export const newsSchema = z.object({
 export type Program = z.infer<typeof programSchema>;
 export type ProgramEntry = Program['entries'][number];
 export type Session = z.infer<typeof sessionsSchema>['sessions'][number];
+export type SessionItem = Session['papers'][number];
+export const isPaper = (p: SessionItem) => !p.kind || p.kind === 'paper';
 export type NewsItem = z.infer<typeof newsSchema>['news'][number];

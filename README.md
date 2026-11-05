@@ -54,7 +54,19 @@ Find the session by `id` in `public/data/sessions.json` and fill `chair` and `pa
 }
 ```
 
-`time` and `affiliation` are optional. While `papers` is empty the session shows "The paper list will be published soon."; while `chair` is `null` the chair block is hidden.
+`time`, `end` and `affiliation` are optional.
+
+A workshop with its own running order can mix other items into `papers` with a `kind`:
+
+```json
+{ "kind": "talk", "time": "09:00", "end": "09:10", "title": "Opening" },
+{ "kind": "keynote", "time": "09:10", "end": "09:50", "title": "Keynote Talk", "authors": "Speaker name" },
+{ "kind": "heading", "title": "Session 1: Sub-session title" },
+{ "time": "09:50", "end": "10:10", "title": "Paper title", "authors": "A. Author; B. Author" },
+{ "kind": "break", "time": "10:30", "end": "11:00", "title": "Coffee Break" }
+```
+
+Only items without `kind` (or `"kind": "paper"`) are counted as papers in the Program. While `papers` is empty the session shows "The paper list will be published soon."; while `chair` is `null` the chair block is hidden.
 
 Session ids: `s1`–`s9` (conference sessions), `w1`–`w8` (workshops), `industry`, `phd-forum`, `demo-poster`.
 
