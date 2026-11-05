@@ -121,7 +121,6 @@ function ProgramRow({
         <TimeCol start={e.start} end={e.end} />
         <Link
           to={`/sessions?id=${encodeURIComponent(e.sessionId)}`}
-          aria-label={`${t.openSession(e.sessionId)}: ${session?.title ?? ''}`}
           className="flex min-w-0 flex-1 flex-col gap-2 rounded-card bg-card p-3.5"
         >
           <div className="flex items-center justify-between gap-2">

@@ -89,7 +89,7 @@ export function HomePage() {
               </TileIcon>
               <TileText {...s.quick.news} />
             </Link>
-            <a href={s.mapsUrl} target="_blank" rel="noopener noreferrer" className={tileClass} aria-label={s.venueAria}>
+            <a href={s.mapsUrl} target="_blank" rel="noopener noreferrer" className={tileClass}>
               <TileIcon bg="bg-leaf-soft" fg="text-leaf-text">
                 <IconPin />
               </TileIcon>

@@ -46,7 +46,6 @@ export const strings = {
     agencyName: 'SpeakSicily',
     agencyPhone: '+39 345 7037677',
     agencyTel: 'tel:+393457037677',
-    venueAria: 'Venue, opens Google Maps',
   },
   program: {
     title: 'Program',
@@ -58,7 +57,6 @@ export const strings = {
     chairPrefix: 'Chair · ',
     papers: (n: number) => (n === 1 ? '1 paper' : `${n} papers`),
     empty: 'Nothing scheduled in this room on this day.',
-    openSession: (code: string) => `Open session ${code}`,
   },
   sessions: {
     title: 'Chairs & papers',
