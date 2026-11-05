@@ -98,7 +98,24 @@
       "end": "12:30",
       "title": "Network Protocols, Configuration & Management",
       "chair": null,
-      "papers": []
+      "papers": [
+        {
+          "title": "Protocol-Storage Co-Design for Efficient Range-Based Set Reconciliation",
+          "authors": "Elvio G. Amparore"
+        },
+        {
+          "title": "Measuring the Quality of Network Configurations Generated using LLM Models",
+          "authors": "Petr Matoušek; Michal Rozsíval; Aleš Smrčka; Jaromír Kotala"
+        },
+        {
+          "title": "An IP-Agnostic Intra-Domain Protocol for Next Generation Enterprise Networks",
+          "authors": "Nirmala Shenoy"
+        },
+        {
+          "title": "Root-Cause Analysis of Misconfigurations in Geographically Distributed Enterprise Networks",
+          "authors": "Negar Mohammadi Mohammadi Koushki; Ibrahim El-shekeil; Krishna Kant"
+        }
+      ]
     },
     {
       "id": "s2",
@@ -110,7 +127,24 @@
       "end": "15:00",
       "title": "Federated & Distributed Learning at the Edge",
       "chair": null,
-      "papers": []
+      "papers": [
+        {
+          "title": "A Decentralized Co-Evolutionary SAC Framework for Adaptive Fuzzy Clustering in FANETs",
+          "authors": "Badia Bouhdid; Adel Ben Ben Mnaouer; Bassem Ouni; Adnan Ahmed Abi Sen; Omar Tayan"
+        },
+        {
+          "title": "Communication-Aware Federated Knowledge Distillation for Extreme Non-IID Edge Networks",
+          "authors": "Ilenia Ficili; Giuseppe Tricomi; Paolo Dini; Antonio Puliafito"
+        },
+        {
+          "title": "SHARD-FL: Scalable Hierarchical Aggregation for Regionally Decomposed Federated Learning in EV Energy Management",
+          "authors": "Ozan Sina Bankaoglu; Oznur Ozkasap"
+        },
+        {
+          "title": "Distributed Lottery Learning",
+          "authors": "Tengfei An; Maria Potop-Butucaru; Bilel Zaghdoudi; Gewu Bu"
+        }
+      ]
     },
     {
       "id": "s3",
@@ -122,7 +156,24 @@
       "end": "17:00",
       "title": "Cloud-Edge Resource Management & Scheduling",
       "chair": null,
-      "papers": []
+      "papers": [
+        {
+          "title": "Adaptive Warm-State Retention for Serverless Cold-Start Mitigation: Treating Keep-Alive Time as an Online Control Parameter",
+          "authors": "Sanjeet Raj Pandey; Axel Küpper"
+        },
+        {
+          "title": "DMOS: Demand-Gated Multi-Objective Replica Placement for Geo-Distributed Multi-Cluster Systems",
+          "authors": "Orazio Tomarchio; Angelo Marchese; Matteo Santanocito"
+        },
+        {
+          "title": "A CVaR-Constrained Hierarchical Reinforcement Learning Framework for Risk-Aware Tail-Latency Scheduling",
+          "authors": "Navid Khaledian; Jaber Pournazari; Tegawendé F. Bissyandé"
+        },
+        {
+          "title": "Agentic LLM-Assisted Fair Resource Allocation for Heterogeneous Multi-Tenant CATS in the Cloud-Edge Continuum",
+          "authors": "Laura Lemmi; Enzo Mingozzi; Antonio Virdis"
+        }
+      ]
     },
     {
       "id": "phd-forum",
@@ -134,7 +185,20 @@
       "end": "17:00",
       "title": "PhD Forum",
       "chair": null,
-      "papers": []
+      "papers": [
+        {
+          "title": "PhD Forum: Measuring Circuit-Invariant Website Fingerprintability in Tor",
+          "authors": "Arbena Musa (University of Prishtina, Kosovo)"
+        },
+        {
+          "title": "PhD Forum: Toward Trustworthy Medical Foundation Models Across the Clinical Edge-Cloud Continuum",
+          "authors": "Fabio Orazio Mirto (University of Messina, Italy)"
+        },
+        {
+          "title": "PhD Forum: Beyond Predictive Maintenance to a Trustworthy Agentic Ecosystem for Automated Operational Certification",
+          "authors": "Ilenia Ficili (Università Degli Studi di Messina, Italy)"
+        }
+      ]
     },
     {
       "id": "industry",
@@ -146,7 +210,28 @@
       "end": "13:00",
       "title": "Industry Track",
       "chair": null,
-      "papers": []
+      "papers": [
+        {
+          "title": "From cloud-centric IoT monitoring to federated edge intelligence for critical asset monitoring",
+          "authors": "Christian Riccio (University of Campania Luigi Vanvitelli & Y Digital SRL Benefit, Italy); Mauro Iacono (Università degli Studi della Campania Luigi Vanvitelli, Italy); Fabrizio Lapiello (Y DIgital SRL Benefit, Italy); Di Nardo Emanuel (Università Degli Studi di Napoli Parthenope, Italy); Flavia Valentina Di Rauso (Y Digital SRL Benefit, Italy); Roberto Falso (Y Digital SRL Benefit, Italy)"
+        },
+        {
+          "title": "Bridging Energy, Carbon and Decision-Making in IT Infrastructures_Lessons from ImpacTracker in the AVANT Project",
+          "authors": "Enrico Martini (Engineering Ingegneria Informatica S.p.A., Italy)"
+        },
+        {
+          "title": "Authority Continuity for Verifiable Lineage in Distributed Systems and AI Agents",
+          "authors": "Nicola Gallo (Nitro Agility, Italy); Stefano Silvestri (National Research Council of Italy (CNR), Italy); Antonio Radesca (Nitro Agility srl, Italy)"
+        },
+        {
+          "title": "Multi-Level Federation for the Telco-Edge-Cloud Continuum",
+          "authors": "Ignazio Di Natali and Mauro Boldi (Telecom Italia, Italy); Francesco Fiorentino (TIM S.p.A., Italy)"
+        },
+        {
+          "title": "Trustworthy Agentic Predictive Maintenance: A Permissioned-Ledger Accountability Layer for Autonomous Maintenance Agents",
+          "authors": "Ilenia Ficili (Università Degli Studi di Messina, Italy); Giuseppe Tricomi (University of Messina, Italy); Francesco Alessi (SmartMe.IO S.r.l, Italy); Antonio Puliafito (University of Messina, Italy)"
+        }
+      ]
     },
     {
       "id": "w5",
@@ -170,7 +255,28 @@
       "end": "15:30",
       "title": "Blockchain, Decentralized Trust & Identity",
       "chair": null,
-      "papers": []
+      "papers": [
+        {
+          "title": "A Modular CBDC Interoperability Framework for Cross-Ledger Transactions",
+          "authors": "Guilherme Marcondes; Rodolfo Pandaio; Miguel Correia; André Augusto; André Vasconcelos"
+        },
+        {
+          "title": "DRIFT: Decentralized Reputation Infrastructure for Trust",
+          "authors": "João Miguel Nogueira; David R. Matos; Guilherme Ramos"
+        },
+        {
+          "title": "Hopper: Bounded-Memory Collaborative Debiasing for Byzantine-Tolerant Peer Sampling",
+          "authors": "Augusta Mukam; Joachim Bruneau-Queyreix; Laurent Reveillere"
+        },
+        {
+          "title": "Empirical Analysis of TEE-Enabled Rollup Designs",
+          "authors": "Claudiu-Nicu Bărbieru; Corentin Libert; Peterson Yuhala; Andrei Arusoaie; Matthieu Bettinger; Oana-Otilia Captarencu; Pascal Felber; Emanuel Onica; Etienne Riviere; Valerio Schiavoni"
+        },
+        {
+          "title": "Binding Humans to Keys: A Secure Decentralized Proof of Personhood Protocol",
+          "authors": "Bilel Zaghdoudi; Gewu Bu; Frederic Hayek; Pascal Lafourcade; Maria Potop-Butucaru"
+        }
+      ]
     },
     {
       "id": "w6",
@@ -204,7 +310,24 @@
       "end": "17:30",
       "title": "High-Performance & Emerging Computing Systems",
       "chair": null,
-      "papers": []
+      "papers": [
+        {
+          "title": "DAHL: Energy-Efficient Machine Learning on Heterogeneous CPU using Task-based Programming",
+          "authors": "Andrew Mary Huet de Barochez; Stéphan Plassart; Sébastien Monnet"
+        },
+        {
+          "title": "Transparent In-Network Encryption for Lustre with Off-Host Keys on a BlueField-3 DPU",
+          "authors": "Jan Sass; Frederic Schimmelpfenning; Reza Salkhordeh; André Brinkmann"
+        },
+        {
+          "title": "Compilers for Distributed Quantum Computing: Performance and Scalability",
+          "authors": "Michele Bandini; Davide Ferrari; Stefano Carretta; Michele Amoretti"
+        },
+        {
+          "title": "CPU Quota and Block I/O Control in Consolidated Multi-Tenant Containerized Platform",
+          "authors": "Mohammadreza Hoseinyfarahabady; Javid Taheri; Albert Zomaya"
+        }
+      ]
     },
     {
       "id": "s6",
@@ -216,7 +339,24 @@
       "end": "10:30",
       "title": "Network Traffic Analysis, Engineering & Security",
       "chair": null,
-      "papers": []
+      "papers": [
+        {
+          "title": "Challenging the HMAC Ubiquity in Web Authentication Tokens",
+          "authors": "Opale Duvivier; Nicolas Le Scouarnec; Pierre-Alain Fouque; Yérom-David Bromberg"
+        },
+        {
+          "title": "MiceRadar: Real-Time Mice-Flow Size Distribution Estimation on FPGA",
+          "authors": "Drixter Velayo Hernandez; Yu-Jui Chang; Yu-Kuen Lai"
+        },
+        {
+          "title": "FATE: A Predictive Flow-Aware Transport Mechanism for AI Data Center Networks",
+          "authors": "Leonardo Alberro; Pedro Casas; Matias Richart; Eduardo Grampín"
+        },
+        {
+          "title": "A Robust Wireless-Aware Server-Side Detection Algorithm for VPN Traffic",
+          "authors": "Yuan Tian; Shou-Hsuan Stephen Huang"
+        }
+      ]
     },
     {
       "id": "w7",
@@ -250,7 +390,24 @@
       "end": "12:30",
       "title": "Intelligent Cyber-Physical, Energy & IoT Systems",
       "chair": null,
-      "papers": []
+      "papers": [
+        {
+          "title": "Resilience-Aware Orchestration of Cyber Recovery and Maintenance in Distributed CPS",
+          "authors": "Laurent Bobelin"
+        },
+        {
+          "title": "Integrating Hybrid Machine Learning into a Blockchain-Based Supply Chain Monitoring System for Predictive Analytics",
+          "authors": "Elias Nelu Dejan; Hajdu-Macelaru Mara; Petrica Pop Sitar"
+        },
+        {
+          "title": "Adaptive Federated Reinforcement Learning for Dynamic Electricity Pricing and EV Load Management in Smart Grids",
+          "authors": "Harshit Gupta; Kartik Gupta; Ayush Sinha; Om Prakash Vyas; Francesco Longo; Giovanni Merlino; Antonio Puliafito"
+        },
+        {
+          "title": "A hierarchical multi-agent cyber-biological system for intelligence-based organoid monitoring and analysis",
+          "authors": "Giovanni Cicceri; Sebastiano Di Bella; Miriam Gaggianesi; Matilde Todaro; Giorgio Stassi; Salvatore Vitabile"
+        }
+      ]
     },
     {
       "id": "s8",
@@ -262,7 +419,24 @@
       "end": "16:00",
       "title": "Wireless, IoT & V2X Networking",
       "chair": null,
-      "papers": []
+      "papers": [
+        {
+          "title": "A Circular Low-Power Wi-Fi Access Point based on a Repurposed Smartphone",
+          "authors": "Thomas Antoine; Robin Dethienne; David Bol"
+        },
+        {
+          "title": "Evaluating the Impact of Selective Downlink Jamming on LoRaWAN Performance",
+          "authors": "Moheed Ali Kayani; Alessandro Aimi; Stephane Rovedakis; Vania Conan"
+        },
+        {
+          "title": "Accelerated Packet Processing for Broker-Based Real-Time Publish/Subscribe Middleware",
+          "authors": "Michael Nast; Fabian Kummer; Michael Rethfeldt; Christian Haubelt; Frank Golatowski"
+        },
+        {
+          "title": "SecureRCV-VRU: DT-Based Runtime Credibility Verification of AI Perception for VRU Safety",
+          "authors": "Mohamed Gharab; Rihab Boussada; Leila Nasraoui"
+        }
+      ]
     },
     {
       "id": "w8",
@@ -286,7 +460,24 @@
       "end": "18:30",
       "title": "Security, Intrusion Detection & Threat Intelligence",
       "chair": null,
-      "papers": []
+      "papers": [
+        {
+          "title": "ZTSF: A Zero-Trust Semantic Firewall for Mitigating NBI-Level Switch Relay Attacks in SDN",
+          "authors": "Tushar Singh; Sarath Babu; Virendra Singh"
+        },
+        {
+          "title": "Alert Filtering with an Intermediate Label-Free Decision Layer",
+          "authors": "Isabella Marasco; Michele Colajanni"
+        },
+        {
+          "title": "The Power of Simple Rules: Lightweight and Explainable Anomaly Detection in Industrial Control Systems",
+          "authors": "Asya Mitseva; Marco Lewandowsky; Andriy Panchenko"
+        },
+        {
+          "title": "Towards Realistic Adversarial Robustness Evaluation for Intrusion Detection in Industrial Control Systems",
+          "authors": "Khalil Al-Hussaeni; Claude Fachkha; Benjamin C. M. Fung; Ibtesam Al Awadhi; Benhur Tekeste"
+        }
+      ]
     },
     {
       "id": "demo-poster",
@@ -298,7 +489,24 @@
       "end": "18:30",
       "title": "Demo + Poster",
       "chair": null,
-      "papers": []
+      "papers": [
+        {
+          "title": "Poster: Automated Penetration Testing Platforms: A Survey and the Case for European Sovereignty",
+          "authors": "Ludovica Fiorentino (University of Naples Federico II, Italy); Pietro Domma (Italy); Luca Epifanio, Filippo Decortes and Alexandra Costea (Ares Cyber, Italy); Angelo Lorusso (Pegaso University, Italy & University of Salerno, Italy); Raffaele Guarasci (Pegaso University, Italy)"
+        },
+        {
+          "title": "Demo: Timing or Tariff? Transparent Decision Support with the TDS Energy Optimizer",
+          "authors": "Xinzhang Chen (The University of New South Wales (UNSW), Australia); Amir Hossein Ordibazar (University of New South Wales, Australia); Bahareh Berenjforoush Azar and Morteza Saberi (University of Technology Sydney, Australia); Arash Shaghaghi (UNSW Sydney, Australia)"
+        },
+        {
+          "title": "Poster: Knowledge-Graph-Augmented Fault Management for Autonomous 5G Networks",
+          "authors": "Ha Manh Le (Viettel High Technology Industries Corporation - Viettel Group, Vietnam); Pham Chi Vy (Viettel High Technology Industries Corporation, Vietnam)"
+        },
+        {
+          "title": "Poster: AI-Agent-Assisted Anomaly Status Detection for 5G Access Sites via Hybrid KPI Filtering and STL Time-Series Decomposition",
+          "authors": "Changhyun Kim, Haejeong Lee, Jieun Moon, Seongho Im, Seungmin Shin, Woohwan Oh, Hyunmin Jang, Sunghyun Park and Sumin Yun (SK Telecom, Korea (South))"
+        }
+      ]
     }
   ]
 }
