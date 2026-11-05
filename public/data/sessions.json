@@ -20,7 +20,44 @@
       ],
       "title": "First International Workshop on Networks for AI and AI for Networks (NetAI 2026)",
       "chair": null,
-      "papers": []
+      "papers": [
+        {
+          "kind": "heading",
+          "title": "Session 1: AI and Data Intelligence for Networked Systems"
+        },
+        {
+          "title": "From GTFS-Realtime Streams to Predictive Transit KPIs: A Lightweight Transformer Architecture",
+          "authors": "Umberto Francesco Carolini, Corrado Fasciano Saverio Ieva, Floriano Scioscia, Michele Ruta"
+        },
+        {
+          "title": "Exploiting Temporal Context for OFDM Channel Estimation with State-Space Models",
+          "authors": "Regina Nora Fiam, Péter Hága, Istvan Csabai"
+        },
+        {
+          "title": "CICFlowMeter-RT: an Extension of CICFlowMeter for Real-Time Network Flow Monitoring",
+          "authors": "Marta Catillo, Antonio Pecchia, Umberto Villano"
+        },
+        {
+          "title": "Beyond Task Success: An Eight-Metric Tiered Evaluation Protocol for LLM Agents Deployed in Network Operations",
+          "authors": "Neeraj Subhash Baji"
+        },
+        {
+          "kind": "heading",
+          "title": "Session 2: Network Infrastructures and Automation"
+        },
+        {
+          "title": "A Telecom Framework for Multi-Stakeholder ML Training and Evaluation",
+          "authors": "Rafael Direito, Thiago Vicente, Miguel Neto, Alexandre Andrade, André Martins, João Pereira, Rafael Gonçalves Teixeira, Diogo Gomes, Rui L Aguiar"
+        },
+        {
+          "title": "Bridging Vendor-Native Management Planes and O-RAN Automation in Private 5G Networks",
+          "authors": "Floriano Scioscia, Filippo Gramegna, Valerio Di Ceglie, Agnese Pinto, Ivano Bilenchi, Michele Ruta, Massimiliano Rossi"
+        },
+        {
+          "title": "A Cloud-to-Thing Linked Data Approach for Composable Digital Twins",
+          "authors": "Saverio Ieva, Davide Loconte, Giuseppe Loseto, Andrea Pazienza, Floriano Scioscia, Michele Ruta"
+        }
+      ]
     },
     {
       "id": "w2",
@@ -388,7 +425,28 @@
       "end": "13:00",
       "title": "Spatio-Temporal Intelligence for Network Computing and Applications (STiNCA)",
       "chair": null,
-      "papers": []
+      "papers": [
+        {
+          "title": "Temporal Behavioural Intelligence for Adaptive Governance of Federated Symbolic Stream Learning",
+          "authors": "Yanni Belhocine, Nida Meddouri (LRE-EPITA, France)"
+        },
+        {
+          "title": "Email as a Structural Linkability Vector in Hybrid Web2/Web3 Payment Systems: A Formal Risk Analysis",
+          "authors": "Elloh Adja (LRE-EPITA, France)"
+        },
+        {
+          "title": "From Frequent Itemsets to Interpretable Security Patterns in Network Telemetry",
+          "authors": "Łukasz Skonieczny, Krzysztof Cabaj (Warsaw University of Technology, Poland)"
+        },
+        {
+          "title": "ML-based Prediction of Laboratory Values on Anonymized EHR Datasets",
+          "authors": "Sascha Schiegg, Altea Qoku, Kanishka Ghosh Dastidar, Harald Kosch (University of Passau, Germany)"
+        },
+        {
+          "title": "A Fleet-Level Spatio-Temporal Dataset for Detecting Coordinated Attacks on Vehicle OTA Updates",
+          "authors": "Khaoula Sghaier, Ghada Gharbi (LRE-EPITA, France), Badis Hammi (Institut Polytechnique de Paris, Télécom SudParis, France), Pierre Merdrignac (VEDECOM, France), Pierre Parrend, Didier Verna (LRE-EPITA, France)"
+        }
+      ]
     },
     {
       "id": "s4",
