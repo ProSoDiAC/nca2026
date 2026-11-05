@@ -401,7 +401,7 @@
       "day": "2026-11-12",
       "room": "B",
       "start": "10:30",
-      "end": "13:00",
+      "end": "12:30",
       "title": "Industry Track",
       "chair": {
         "name": "Giovanni Frattini",
@@ -437,7 +437,7 @@
       "day": "2026-11-12",
       "room": "A",
       "start": "10:30",
-      "end": "13:00",
+      "end": "12:30",
       "title": "Spatio-Temporal Intelligence for Network Computing and Applications (STiNCA)",
       "chair": null,
       "papers": [
@@ -469,8 +469,8 @@
       "kind": "session",
       "day": "2026-11-12",
       "room": "B",
-      "start": "14:00",
-      "end": "15:30",
+      "start": "13:30",
+      "end": "15:00",
       "title": "Blockchain, Decentralized Trust & Identity",
       "chair": {
         "name": "Miguel Correia",
@@ -505,16 +505,16 @@
       "kind": "workshop",
       "day": "2026-11-12",
       "room": "A",
-      "start": "14:00",
-      "end": "17:30",
+      "start": "13:30",
+      "end": "17:00",
       "slots": [
         {
-          "start": "14:00",
-          "end": "15:30"
+          "start": "13:30",
+          "end": "15:00"
         },
         {
-          "start": "16:00",
-          "end": "17:30"
+          "start": "15:30",
+          "end": "17:00"
         }
       ],
       "title": "First International Workshop on AI-Enabled Secure & Reliable Communications (AI-SecureCom)",
@@ -527,8 +527,8 @@
       "kind": "session",
       "day": "2026-11-12",
       "room": "B",
-      "start": "16:00",
-      "end": "17:30",
+      "start": "15:30",
+      "end": "17:00",
       "title": "High-Performance & Emerging Computing Systems",
       "chair": [
         {
@@ -698,7 +698,7 @@
       "day": "2026-11-13",
       "room": "B",
       "start": "16:30",
-      "end": "18:30",
+      "end": "18:00",
       "title": "Security, Intrusion Detection & Threat Intelligence",
       "chair": {
         "name": "Francesco Longo",
@@ -727,10 +727,10 @@
       "id": "demo-poster",
       "code": "D&P",
       "kind": "demo",
-      "day": "2026-11-13",
+      "day": "2026-11-11",
       "room": "A",
-      "start": "16:30",
-      "end": "18:30",
+      "start": "12:30",
+      "end": "13:30",
       "title": "Demo + Poster",
       "chair": null,
       "papers": [

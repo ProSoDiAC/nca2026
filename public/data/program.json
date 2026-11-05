@@ -150,7 +150,8 @@
       "start": "09:30",
       "end": "10:30",
       "showInAllRooms": true,
-      "speaker": "Andrea Passarella"
+      "speaker": "Dr. Andrea Passarella, IIT-CNR, Italy",
+      "title": "Decentralised learning for physical AI: coordination, efficiency and robustness"
     },
     {
       "day": "2026-11-11",
@@ -239,7 +240,8 @@
       "start": "09:00",
       "end": "10:00",
       "showInAllRooms": true,
-      "speaker": "Serge Fdida"
+      "speaker": "Prof. Serge Fdida, Sorbonne Université, France",
+      "title": "SLICES-RI: Towards AI-Assisted Experimental Research for Beyond-5G and 6G Networks"
     },
     {
       "day": "2026-11-12",
@@ -254,7 +256,7 @@
       "room": "B",
       "type": "session",
       "start": "10:30",
-      "end": "13:00",
+      "end": "12:30",
       "sessionId": "industry"
     },
     {
@@ -262,70 +264,70 @@
       "room": "A",
       "type": "session",
       "start": "10:30",
-      "end": "13:00",
+      "end": "12:30",
       "sessionId": "w5"
     },
     {
       "day": "2026-11-12",
       "room": "all",
       "type": "break",
-      "start": "13:00",
-      "end": "14:00",
+      "start": "12:30",
+      "end": "13:30",
       "title": "Light Lunch"
     },
     {
       "day": "2026-11-12",
       "room": "B",
       "type": "session",
-      "start": "14:00",
-      "end": "15:30",
+      "start": "13:30",
+      "end": "15:00",
       "sessionId": "s4"
     },
     {
       "day": "2026-11-12",
       "room": "A",
       "type": "session",
-      "start": "14:00",
-      "end": "15:30",
+      "start": "13:30",
+      "end": "15:00",
       "sessionId": "w6"
     },
     {
       "day": "2026-11-12",
       "room": "all",
       "type": "break",
-      "start": "15:30",
-      "end": "16:00",
+      "start": "15:00",
+      "end": "15:30",
       "title": "Coffee Break"
     },
     {
       "day": "2026-11-12",
       "room": "B",
       "type": "session",
-      "start": "16:00",
-      "end": "17:30",
+      "start": "15:30",
+      "end": "17:00",
       "sessionId": "s5"
     },
     {
       "day": "2026-11-12",
       "room": "A",
       "type": "session",
-      "start": "16:00",
-      "end": "17:30",
+      "start": "15:30",
+      "end": "17:00",
       "sessionId": "w6"
     },
     {
       "day": "2026-11-12",
       "room": "all",
       "type": "social",
-      "start": "17:30",
-      "end": "19:30",
+      "start": "17:00",
+      "end": "19:00",
       "title": "Guided Tour of Ortigia"
     },
     {
       "day": "2026-11-12",
       "room": "all",
       "type": "social",
-      "start": "21:00",
+      "start": "20:00",
       "end": "23:30",
       "title": "Social Gala Dinner"
     },
@@ -381,17 +383,18 @@
       "day": "2026-11-13",
       "room": "B",
       "type": "keynote",
-      "start": "12:30",
-      "end": "13:30",
+      "start": "13:30",
+      "end": "14:30",
       "showInAllRooms": true,
-      "speaker": "Lance Fiondella"
+      "speaker": "Lance Fiondella, University of Massachusetts Dartmouth, USA",
+      "title": "A Mathematical Theory of Resilience"
     },
     {
       "day": "2026-11-13",
       "room": "all",
       "type": "break",
-      "start": "13:30",
-      "end": "14:30",
+      "start": "12:30",
+      "end": "13:30",
       "title": "Light Lunch"
     },
     {
@@ -423,23 +426,23 @@
       "room": "B",
       "type": "session",
       "start": "16:30",
-      "end": "18:30",
+      "end": "18:00",
       "sessionId": "s9"
     },
     {
-      "day": "2026-11-13",
+      "day": "2026-11-11",
       "room": "A",
       "type": "session",
-      "start": "16:30",
-      "end": "18:30",
+      "start": "12:30",
+      "end": "13:30",
       "sessionId": "demo-poster"
     },
     {
       "day": "2026-11-13",
       "room": "B",
       "type": "plenary",
-      "start": "18:30",
-      "end": "18:45",
+      "start": "18:00",
+      "end": "18:15",
       "showInAllRooms": true,
       "title": "Closing Remarks"
     }
