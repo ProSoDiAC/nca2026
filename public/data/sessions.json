@@ -537,8 +537,7 @@
         },
         {
           "name": "Adel Ben Mnaouer",
-          "affiliation": "University of Prince Mugrin, Saudi Arabia",
-          "tbc": true
+          "affiliation": "University of Prince Mugrin, Saudi Arabia"
         }
       ],
       "papers": [
@@ -571,8 +570,7 @@
       "title": "Network Traffic Analysis, Engineering & Security",
       "chair": {
         "name": "Petrica Pop Sitar",
-        "affiliation": "Technical University of Cluj-Napoca, Romania",
-        "tbc": true
+        "affiliation": "Technical University of Cluj-Napoca, Romania"
       },
       "papers": [
         {
