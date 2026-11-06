@@ -19,7 +19,7 @@ export function DayPicker({
   variant: 'tall' | 'compact';
 }) {
   return (
-    <div role="group" aria-label={strings.program.dayGroup} className="grid grid-cols-4 gap-2">
+    <div role="group" aria-label={strings.program.dayGroup} className="grid w-full grid-cols-4 gap-2 md:max-w-[560px]">
       {days.map((d) => {
         const selected = d.date === value;
         const colors = selected ? 'bg-night text-white' : 'bg-card text-night';

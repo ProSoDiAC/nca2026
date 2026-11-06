@@ -1,76 +1,86 @@
 import { Link } from 'react-router-dom';
 import type { ReactNode } from 'react';
 import { useData } from '../lib/data';
+import { dayNumber } from '../lib/dates';
 import { strings } from '../strings';
 import { HeroNetwork } from '../components/NetworkMotif';
+import { Container } from '../components/Container';
 import { IconCalendar, IconNews, IconPeople, IconPin } from '../components/icons';
 
 const s = strings.home;
 
+const logoHeight = (size?: string) => (size === 'lg' ? 'max-h-[60px]' : size === 'sm' ? 'max-h-[34px]' : 'max-h-[44px]');
+
 function SectionTitle({ children }: { children: ReactNode }) {
-  return <h2 className="m-0 font-sora text-lg font-semibold">{children}</h2>;
+  return <h2 className="m-0 font-sora text-lg font-semibold md:text-xl">{children}</h2>;
 }
 
-const tileClass = 'flex min-h-[112px] flex-col justify-between gap-3 rounded-card bg-card p-4';
+const tileClass =
+  'flex min-h-[112px] flex-col justify-between gap-3 rounded-card bg-card p-4 transition-shadow hover:shadow-[0_2px_12px_rgba(10,37,64,0.08)] md:p-5';
 
 function TileText({ title, sub }: { title: string; sub: string }) {
   return (
     <span className="flex flex-col gap-0.5">
-      <span className="font-sora text-[15px] font-semibold">{title}</span>
-      <span className="text-[12.5px] text-muted">{sub}</span>
+      <span className="font-sora text-[15px] font-semibold md:text-base">{title}</span>
+      <span className="text-[12.5px] text-muted md:text-[13px]">{sub}</span>
     </span>
   );
 }
 
 function TileIcon({ bg, fg, children }: { bg: string; fg: string; children: ReactNode }) {
-  return (
-    <span className={`flex h-10 w-10 items-center justify-center rounded-xl ${bg} ${fg}`}>{children}</span>
-  );
+  return <span className={`flex h-10 w-10 items-center justify-center rounded-xl ${bg} ${fg}`}>{children}</span>;
 }
 
 export function HomePage() {
-  const { news } = useData();
-  const latest = news[0];
+  const { news, program } = useData();
+  const dowByDate = new Map(program.days.map((d) => [d.date, d.dow]));
+  const keynotes = program.entries.filter((e) => e.type === 'keynote');
 
   return (
-    <div className="min-h-0 flex-1 overflow-y-auto">
-      <section className="relative flex flex-col gap-5 overflow-hidden bg-night px-5 pb-7 pt-12">
+    <div className="flex flex-col">
+      {/* Hero */}
+      <section className="relative overflow-hidden bg-night">
         <HeroNetwork />
-        <div className="relative mt-9 flex flex-col gap-2">
-          <p className="m-0 text-xs font-semibold uppercase tracking-[0.08em] text-ochre">{s.eyebrow}</p>
-          <h1 className="m-0 font-sora text-[56px] font-bold leading-none text-white">{s.title}</h1>
-          <p className="m-0 font-sora text-[19px] font-medium leading-[1.3] text-ice">{s.subtitle}</p>
-        </div>
-        <div className="relative flex flex-col gap-2.5 text-sm text-white">
-          <div className="flex items-center gap-2.5">
-            <IconCalendar size={20} className="text-ochre" />
-            <span>{s.dates}</span>
+        <Container className="relative flex flex-col gap-5 pb-7 pt-12 md:gap-6 md:pb-14 md:pt-16 lg:pb-20 lg:pt-20">
+          <div className="mt-9 flex flex-col gap-2 md:mt-0 md:max-w-[640px]">
+            <p className="m-0 text-xs font-semibold uppercase tracking-[0.08em] text-ochre md:text-[13px]">{s.eyebrow}</p>
+            <h1 className="m-0 font-sora text-[56px] font-bold leading-none text-white md:text-[72px] lg:text-[84px]">
+              {s.title}
+            </h1>
+            <p className="m-0 font-sora text-[19px] font-medium leading-[1.3] text-ice md:text-[24px]">{s.subtitle}</p>
           </div>
-          <div className="flex items-center gap-2.5">
-            <IconPin size={20} className="text-ochre" />
-            <span>{s.place}</span>
+          <div className="flex flex-col gap-2.5 text-sm text-white md:flex-row md:gap-8 md:text-[15px]">
+            <div className="flex items-center gap-2.5">
+              <IconCalendar size={20} className="text-ochre" />
+              <span>{s.dates}</span>
+            </div>
+            <div className="flex items-center gap-2.5">
+              <IconPin size={20} className="text-ochre" />
+              <span>{s.place}</span>
+            </div>
           </div>
-        </div>
-        <div className="relative flex gap-2.5">
-          <Link
-            to="/program"
-            className="flex min-h-[48px] flex-1 items-center justify-center rounded-[14px] bg-ochre text-[15px] font-semibold text-night"
-          >
-            {s.ctaProgram}
-          </Link>
-          <Link
-            to="/news"
-            className="flex min-h-[48px] flex-1 items-center justify-center rounded-[14px] border-[1.5px] border-teal-light text-[15px] font-semibold text-white"
-          >
-            {s.ctaNews}
-          </Link>
-        </div>
+          <div className="flex gap-2.5 md:max-w-[440px]">
+            <Link
+              to="/program"
+              className="flex min-h-[48px] flex-1 items-center justify-center rounded-[14px] bg-ochre text-[15px] font-semibold text-night"
+            >
+              {s.ctaProgram}
+            </Link>
+            <Link
+              to="/news"
+              className="flex min-h-[48px] flex-1 items-center justify-center rounded-[14px] border-[1.5px] border-teal-light text-[15px] font-semibold text-white"
+            >
+              {s.ctaNews}
+            </Link>
+          </div>
+        </Container>
       </section>
 
-      <div className="flex flex-col gap-7 px-5 pb-7 pt-6">
-        <section className="flex flex-col gap-3">
+      <Container className="flex flex-col gap-7 pb-7 pt-6 md:gap-12 md:pb-14 md:pt-10">
+        {/* Quick access */}
+        <section className="flex flex-col gap-3 md:gap-4">
           <SectionTitle>{s.quickAccess}</SectionTitle>
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
             <Link to="/program" className={tileClass}>
               <TileIcon bg="bg-teal-soft" fg="text-teal-text">
                 <IconCalendar />
@@ -98,50 +108,83 @@ export function HomePage() {
           </div>
         </section>
 
-        <section className="flex flex-col gap-3">
-          <SectionTitle>{s.aboutTitle}</SectionTitle>
-          <p className="m-0 text-[14.5px] leading-[1.55] text-body">{s.about}</p>
-        </section>
-
-        <section className="flex flex-col gap-3">
-          <SectionTitle>{s.whereTitle}</SectionTitle>
-          <address className="flex flex-col gap-1 rounded-card bg-card p-4 not-italic">
-            <span className="text-[15px] font-semibold">{s.venueName}</span>
-            <span className="text-sm text-muted">{s.venueAddress}</span>
-          </address>
-        </section>
-
-        {latest && (
+        {/* About + Where */}
+        <div className="grid gap-7 md:gap-8 lg:grid-cols-3 lg:gap-10">
+          <section className="flex flex-col gap-3 lg:col-span-2">
+            <SectionTitle>{s.aboutTitle}</SectionTitle>
+            <p className="m-0 max-w-[68ch] text-[14.5px] leading-[1.55] text-body md:text-[15.5px] md:leading-[1.65]">{s.about}</p>
+          </section>
           <section className="flex flex-col gap-3">
+            <SectionTitle>{s.whereTitle}</SectionTitle>
+            <address className="flex flex-col gap-1 rounded-card bg-card p-4 not-italic md:p-5">
+              <span className="text-[15px] font-semibold">{s.venueName}</span>
+              <span className="text-sm text-muted">{s.venueAddress}</span>
+            </address>
+          </section>
+        </div>
+
+        {/* Keynotes */}
+        {keynotes.length > 0 && (
+          <section className="flex flex-col gap-3 md:gap-4">
+            <SectionTitle>{s.keynotesTitle}</SectionTitle>
+            <ul className="m-0 grid list-none gap-3 p-0 md:grid-cols-3 md:gap-4">
+              {keynotes.map((k) => (
+                <li key={`${k.day}-${k.start}`} className="flex flex-col gap-2 rounded-card bg-ochre-soft p-4 md:p-5">
+                  <span className="text-xs font-semibold text-ochre-text">
+                    {dowByDate.get(k.day)} {dayNumber(k.day)} Nov · {k.start} – {k.end}
+                  </span>
+                  {'title' in k && k.title && (
+                    <span className="font-sora text-[15px] font-semibold leading-[1.3]">{k.title}</span>
+                  )}
+                  {'speaker' in k && k.speaker && <span className="text-[13.5px] text-sub">{k.speaker}</span>}
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {/* Latest news: 1 on phones, up to 3 from tablet up */}
+        {news.length > 0 && (
+          <section className="flex flex-col gap-3 md:gap-4">
             <div className="flex items-baseline justify-between">
               <SectionTitle>{s.latestNews}</SectionTitle>
               <Link to="/news" className="flex min-h-[44px] items-center text-sm font-semibold text-teal-text">
                 {s.seeAll}
               </Link>
             </div>
-            <Link to={`/news/${encodeURIComponent(latest.id)}`} className="flex flex-col gap-1.5 rounded-card bg-card p-4">
-              <span className="text-xs font-semibold uppercase tracking-[0.06em] text-teal-text">{latest.category}</span>
-              <span className="font-sora text-base font-semibold">{latest.title}</span>
-              <span className="text-sm leading-normal text-muted">{latest.summary}</span>
-            </Link>
+            <ul className="m-0 grid list-none gap-3 p-0 md:grid-cols-2 md:gap-4 lg:grid-cols-3">
+              {news.slice(0, 3).map((n, i) => (
+                <li key={n.id} className={i === 0 ? 'flex' : 'hidden md:flex'}>
+                  <Link
+                    to={`/news/${encodeURIComponent(n.id)}`}
+                    className="flex w-full flex-col gap-1.5 rounded-card bg-card p-4 md:p-5"
+                  >
+                    <span className="text-xs font-semibold uppercase tracking-[0.06em] text-teal-text">{n.category}</span>
+                    <span className="font-sora text-base font-semibold">{n.title}</span>
+                    <span className="text-sm leading-normal text-muted">{n.summary}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </section>
         )}
 
-        <section className="flex flex-col gap-3">
+        {/* Sponsors & patronage */}
+        <section className="flex flex-col gap-3 md:gap-4">
           <SectionTitle>{s.sponsorsTitle}</SectionTitle>
-          <ul className="m-0 grid list-none grid-cols-2 gap-3 p-0">
+          <ul className="m-0 grid list-none grid-cols-2 gap-3 p-0 sm:grid-cols-3 md:grid-cols-4 md:gap-4">
             {s.sponsors.map((sp) => (
-              <li key={sp.name} className="flex h-[84px] items-center justify-center rounded-card bg-card px-4 py-3">
+              <li key={sp.name} className="flex h-[84px] items-center justify-center rounded-card bg-card px-4 py-3 md:h-[96px]">
                 <img
                   src={`${import.meta.env.BASE_URL}logos/${sp.logo}`}
                   alt={sp.name}
                   loading="lazy"
-                  className={`${'size' in sp && sp.size === 'lg' ? 'max-h-[60px]' : 'max-h-[44px]'} max-w-full object-contain`}
+                  className={`${logoHeight('size' in sp ? sp.size : undefined)} max-w-full object-contain`}
                 />
               </li>
             ))}
           </ul>
-          <div className="flex items-center gap-4 rounded-card bg-card p-4">
+          <div className="flex items-center gap-4 rounded-card bg-card p-4 md:max-w-[420px]">
             <img
               src={`${import.meta.env.BASE_URL}logos/${s.patronage.logo}`}
               alt=""
@@ -155,14 +198,15 @@ export function HomePage() {
           </div>
         </section>
 
-        <section className="flex flex-col gap-1.5 rounded-card bg-night p-4 text-white">
+        {/* Agency: on tablet/desktop it is in the footer */}
+        <section className="flex flex-col gap-1.5 rounded-card bg-night p-4 text-white md:hidden">
           <p className="m-0 text-xs font-semibold uppercase tracking-[0.06em] text-ochre">{s.agencyEyebrow}</p>
           <h2 className="m-0 font-sora text-base font-semibold">{s.agencyName}</h2>
           <a href={s.agencyTel} className="flex min-h-[44px] items-center text-sm text-ice">
             {s.agencyPhone}
           </a>
         </section>
-      </div>
+      </Container>
     </div>
   );
 }

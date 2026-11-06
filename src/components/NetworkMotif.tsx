@@ -1,7 +1,13 @@
 /** The "network of nodes" pattern from the hero (Home) and the featured news card. */
 export function HeroNetwork() {
   return (
-    <svg aria-hidden="true" viewBox="0 0 390 300" width="390" height="300" className="pointer-events-none absolute right-0 top-0">
+    <svg
+      aria-hidden="true"
+      viewBox="0 0 390 300"
+      width="390"
+      height="300"
+      className="pointer-events-none absolute right-0 top-0 h-auto w-[390px] md:w-[520px] lg:right-[max(0px,calc(50%-620px))] lg:w-[640px]"
+    >
       <g stroke="#2F6F8F" strokeWidth="1.2" fill="none">
         <path d="M300 40 L360 100" />
         <path d="M360 100 L320 170" />

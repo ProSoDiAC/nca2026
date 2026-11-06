@@ -27,7 +27,7 @@ export default {
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
       borderRadius: { card: '16px', 'card-lg': '20px', chip: '999px' },
-      maxWidth: { app: '480px' },
+      maxWidth: { app: '480px', site: '1240px' },
     },
   },
   plugins: [],

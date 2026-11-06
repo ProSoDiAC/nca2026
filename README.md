@@ -90,6 +90,14 @@ No code change is needed: the build uses relative paths (`base: './'`), so the s
 
 The icons in `public/icons/` are generated from the hero's network motif. To regenerate after changing `scripts/make-icons.mjs`: `npm run icons`.
 
+## Responsive layout
+
+One app, three layouts (Tailwind breakpoints):
+
+- **Phones (< 768px):** bottom tab bar, single column, day/room pickers stick to the top while scrolling.
+- **Tablets (768–1023px):** top navigation header, wider content, multi-column grids on Home and News.
+- **Desktop (≥ 1024px):** top navigation, content up to 1240px wide, footer; the Program can show **both rooms side by side** ("Both rooms", default on desktop); Sessions shows the list on the left and the selected session's chair and papers on the right.
+
 ## Project layout
 
 ```
@@ -98,7 +106,8 @@ public/fonts/       Sora and Inter, self-hosted for offline use
 public/icons/       PWA icons
 src/strings.ts      all interface texts
 src/lib/            data loading + zod schemas, dates (Europe/Rome), storage
-src/components/     tab bar, layout, day picker, icons
+src/components/     layout, tab bar (phones), desktop header and footer, day picker, icons
+src/hooks/          useMediaQuery (breakpoint-aware rendering)
 src/pages/          Home, Program, Sessions, News, News detail
 mock/               original visual mocks (reference only, not built)
 ```

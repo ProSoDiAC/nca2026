@@ -9,10 +9,11 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body, #root { height: 100%; }
+html { -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
-  background: #E1E8EC;
+  min-height: 100dvh;
+  background: #F4F7F8;
   color: #0A2540;
   font-family: 'Inter', system-ui, sans-serif;
   -webkit-tap-highlight-color: transparent;

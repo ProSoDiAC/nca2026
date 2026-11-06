@@ -6,14 +6,14 @@ export function DataGate({ children }: { children: ReactNode }) {
   const { state, reload } = useDataState();
   if (state.status === 'loading') {
     return (
-      <div className="flex flex-1 items-center justify-center text-sm text-muted" role="status">
+      <div className="flex min-h-[50vh] flex-1 items-center justify-center text-sm text-muted" role="status">
         {strings.states.loading}
       </div>
     );
   }
   if (state.status === 'error') {
     return (
-      <div className="flex flex-1 flex-col justify-center gap-4 px-5" role="alert">
+      <div className="mx-auto flex w-full max-w-[640px] flex-1 flex-col justify-center gap-4 px-5 py-10" role="alert">
         <h1 className="font-sora text-xl font-semibold">{strings.states.errorTitle}</h1>
         <p className="text-sm text-muted">{strings.states.errorHint}</p>
         <ul className="flex flex-col gap-2">
