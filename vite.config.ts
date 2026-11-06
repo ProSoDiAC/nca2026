@@ -32,7 +32,7 @@ export default defineConfig({
       workbox: {
         // Precache the app shell, fonts, icons and the JSON data so the app works offline.
         // Each deploy changes the precache revisions, so updated JSON reaches phones on the next open.
-        globPatterns: ['**/*.{js,css,html,woff2,png,svg,json,webmanifest}'],
+        globPatterns: ['**/*.{js,css,html,woff2,png,webp,svg,json,webmanifest}'],
         navigateFallback: 'index.html',
         cleanupOutdatedCaches: true,
       },

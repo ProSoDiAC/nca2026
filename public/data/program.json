@@ -124,7 +124,8 @@
       "type": "social",
       "start": "19:00",
       "end": "21:30",
-      "title": "Welcome Cocktail"
+      "title": "Welcome Cocktail",
+      "description": "An informal evening to open NCA 2026: meet the other participants and the organizers before the main conference starts."
     },
     {
       "day": "2026-11-11",
@@ -215,7 +216,8 @@
       "type": "social",
       "start": "17:00",
       "end": "18:30",
-      "title": "Group 1: Pupi · Group 2: Train"
+      "title": "Group 1: Pupi · Group 2: Train",
+      "description": "Participants are split into two groups. From 17:00 to 18:30 Group 1 attends the puppet show and Group 2 takes the train ride; from 18:30 to 20:00 they swap.\n\nOpera dei Pupi – Sicilian puppet theatre\nA traditional show of the Opera dei Pupi, Sicily's marionette theatre, recognised by UNESCO as Intangible Cultural Heritage of Humanity. Hand-carved puppets in shining armour, moved from above with iron rods, act out the adventures of Charlemagne's paladins – Orlando, Rinaldo and their duels with the Saracens – while the puppeteers give voice to every character.\n\nOrtigia by tourist train\nA ride around Ortigia, the island that is the historic heart of Siracusa and part of a UNESCO World Heritage site: the Temple of Apollo, Piazza Duomo and the cathedral built into a Greek temple, the Fountain of Arethusa and the waterfront along the old sea walls."
     },
     {
       "day": "2026-11-11",
@@ -223,7 +225,8 @@
       "type": "social",
       "start": "18:30",
       "end": "20:00",
-      "title": "Group 1: Train · Group 2: Pupi"
+      "title": "Group 1: Train · Group 2: Pupi",
+      "description": "Second round: from 18:30 to 20:00 Group 1 takes the train ride and Group 2 attends the puppet show.\n\nOpera dei Pupi – Sicilian puppet theatre\nA traditional show of the Opera dei Pupi, Sicily's marionette theatre, recognised by UNESCO as Intangible Cultural Heritage of Humanity. Hand-carved puppets in shining armour, moved from above with iron rods, act out the adventures of Charlemagne's paladins – Orlando, Rinaldo and their duels with the Saracens – while the puppeteers give voice to every character.\n\nOrtigia by tourist train\nA ride around Ortigia, the island that is the historic heart of Siracusa and part of a UNESCO World Heritage site: the Temple of Apollo, Piazza Duomo and the cathedral built into a Greek temple, the Fountain of Arethusa and the waterfront along the old sea walls."
     },
     {
       "day": "2026-11-12",
@@ -321,7 +324,8 @@
       "type": "social",
       "start": "17:00",
       "end": "19:00",
-      "title": "Guided Tour of Ortigia"
+      "title": "Guided Tour of Ortigia",
+      "description": "A guided tour of Ortigia with a local guide: over 2,700 years of history in a few streets, from the Greek Temple of Apollo to the baroque Piazza Duomo, the Fountain of Arethusa with its papyrus plants, and the views over the Great Harbour."
     },
     {
       "day": "2026-11-12",
@@ -329,7 +333,8 @@
       "type": "social",
       "start": "20:00",
       "end": "23:30",
-      "title": "Social Gala Dinner"
+      "title": "Social Gala Dinner",
+      "description": "The conference gala dinner: an evening with all participants around a table of Sicilian cuisine."
     },
     {
       "day": "2026-11-13",

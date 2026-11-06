@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useId, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useData } from '../lib/data';
 import { initialDay, rememberDay } from '../lib/initialDay';
@@ -7,7 +7,7 @@ import { chairsOf, isPaper, type ProgramEntry } from '../lib/schema';
 import { strings } from '../strings';
 import { PageHeader } from '../components/PageHeader';
 import { DayPicker } from '../components/DayPicker';
-import { IconChevronRight } from '../components/icons';
+import { IconChevronDown, IconChevronRight } from '../components/icons';
 
 const DAY_KEY = 'nca2026.program.day';
 const ROOM_KEY = 'nca2026.program.room';
@@ -119,10 +119,7 @@ function ProgramRow({
     return (
       <>
         <TimeCol start={e.start} end={e.end} />
-        <div className="flex min-w-0 flex-1 flex-col gap-2 rounded-card bg-leaf-soft p-3.5">
-          <span className="self-start rounded-chip bg-leaf-text px-2.5 py-1 text-xs font-semibold text-white">{t.social}</span>
-          <div className="font-sora text-[15px] font-semibold leading-[1.3]">{e.title}</div>
-        </div>
+        <SocialCard title={e.title} description={e.description} />
       </>
     );
   }
@@ -171,5 +168,62 @@ function ProgramRow({
         {e.title && e.speaker && <div className="text-[13px] text-sub">{e.speaker}</div>}
       </article>
     </>
+  );
+}
+
+function SocialCard({ title, description }: { title: string; description?: string }) {
+  const [open, setOpen] = useState(false);
+  const id = useId();
+  const chip = (
+    <span className="self-start rounded-chip bg-leaf-text px-2.5 py-1 text-xs font-semibold text-white">{t.social}</span>
+  );
+  const heading = <span className="font-sora text-[15px] font-semibold leading-[1.3]">{title}</span>;
+  if (!description) {
+    return (
+      <div className="flex min-w-0 flex-1 flex-col gap-2 rounded-card bg-leaf-soft p-3.5">
+        {chip}
+        {heading}
+      </div>
+    );
+  }
+  return (
+    <div className="flex min-w-0 flex-1 flex-col rounded-card bg-leaf-soft">
+      <button
+        type="button"
+        aria-expanded={open}
+        aria-controls={id}
+        onClick={() => setOpen((o) => !o)}
+        className="flex flex-col gap-2 border-0 bg-transparent p-3.5 text-left text-night"
+      >
+        {chip}
+        {heading}
+        <span className="flex items-center gap-1 text-[13px] font-semibold text-leaf-text">
+          {open ? t.lessInfo : t.moreInfo}
+          <span className={`flex transition-transform duration-200 ${open ? 'rotate-180' : ''}`}>
+            <IconChevronDown size={16} />
+          </span>
+        </span>
+      </button>
+      {open && (
+        <div id={id} className="flex flex-col gap-2.5 px-3.5 pb-3.5">
+          {description.split(/\n{2,}/).map((para, i) => {
+            // A paragraph whose first line is followed by a line break gets that line as a bold heading.
+            const [first, ...rest] = para.split('\n');
+            return (
+              <p key={i} className="m-0 text-[13.5px] leading-[1.55] text-body">
+                {rest.length ? (
+                  <>
+                    <strong className="block font-semibold text-night">{first}</strong>
+                    {rest.join(' ')}
+                  </>
+                ) : (
+                  para
+                )}
+              </p>
+            );
+          })}
+        </div>
+      )}
+    </div>
   );
 }

@@ -13,7 +13,7 @@ export const programSchema = z.object({
   entries: z.array(
     z.discriminatedUnion('type', [
       z.object({ type: z.literal('break'), day: isoDate, room, start: hhmm, end: hhmm, title: z.string() }),
-      z.object({ type: z.literal('social'), day: isoDate, room, start: hhmm, end: hhmm, title: z.string() }),
+      z.object({ type: z.literal('social'), day: isoDate, room, start: hhmm, end: hhmm, title: z.string(), description: z.string().optional() }),
       z.object({ type: z.literal('session'), day: isoDate, room, start: hhmm, end: hhmm, sessionId: z.string().min(1), showInAllRooms }),
       z.object({
         type: z.enum(['keynote', 'plenary']),
