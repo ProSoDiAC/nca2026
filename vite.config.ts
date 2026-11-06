@@ -9,7 +9,8 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      injectRegister: 'script-defer',
+      // Registered in src/main.tsx (immediate activation + periodic update checks).
+      injectRegister: false,
       includeAssets: ['icons/favicon.svg', 'icons/apple-touch-icon.png', 'fonts/*.woff2', 'data/*.json'],
       manifest: {
         id: './',
@@ -34,6 +35,9 @@ export default defineConfig({
         // Each deploy changes the precache revisions, so updated JSON reaches phones on the next open.
         globPatterns: ['**/*.{js,css,html,woff2,png,webp,svg,json,webmanifest}'],
         navigateFallback: 'index.html',
+        // A new deploy takes over open pages right away instead of waiting for every tab/app to close.
+        skipWaiting: true,
+        clientsClaim: true,
         cleanupOutdatedCaches: true,
       },
     }),
