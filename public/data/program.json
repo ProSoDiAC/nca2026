@@ -207,7 +207,7 @@
       "room": "A",
       "type": "session",
       "start": "15:30",
-      "end": "17:00",
+      "end": "16:15",
       "sessionId": "phd-forum"
     },
     {
@@ -411,11 +411,11 @@
       "sessionId": "s8"
     },
     {
-      "day": "2026-11-13",
+      "day": "2026-11-11",
       "room": "A",
       "type": "session",
-      "start": "14:30",
-      "end": "16:00",
+      "start": "16:15",
+      "end": "17:00",
       "sessionId": "w8"
     },
     {
@@ -428,10 +428,10 @@
     },
     {
       "day": "2026-11-13",
-      "room": "B",
+      "room": "A",
       "type": "session",
-      "start": "16:30",
-      "end": "18:00",
+      "start": "14:30",
+      "end": "16:00",
       "sessionId": "s9"
     },
     {

@@ -172,11 +172,13 @@ function BothRooms({
                 <span>{spanning.every((e) => e.type === 'break') && <TimeCol start={start} end={perRoom[0].end} />}</span>
                 {rooms.map((r) => {
                   const e = perRoom.find((x) => x.room === r);
+                  // Something that started earlier is still running in this room: leave the cell empty.
+                  const ongoing = entries.some((x) => x.room === r && x.start < start && x.end > start);
                   return (
                     <span key={r} className="flex">
                       {e ? (
                         <EntryCard entry={e} room={r} sessionsById={sessionsById} />
-                      ) : (
+                      ) : ongoing ? null : (
                         <span className="flex min-h-[64px] flex-1 items-center justify-center rounded-card border border-dashed border-dash text-[13px] text-tab">
                           {t.noEvent}
                         </span>
