@@ -168,7 +168,9 @@
         {
           "time": "13:30",
           "end": "13:50",
-          "title": "Local and Cloud-Backend LLM Inference for MCP-Enabled Cyber-Physical Systems"
+          "title": "Local and Cloud-Backend LLM Inference for MCP-Enabled Cyber-Physical Systems",
+          "authors": "Matteo Piccadaci, Fabio Orazio Mirto, Giuseppe Tricomi, Luca D'Agati, Giovanni Merlino (University of Messina, Italy)",
+          "presenter": "Matteo Piccadaci"
         },
         {
           "time": "13:50",
@@ -178,17 +180,23 @@
         {
           "time": "14:10",
           "end": "14:30",
-          "title": "ScaleBench: An Extensible and Reproducible Experimental Platform for Kubernetes Autoscaling Research"
+          "title": "ScaleBench: An Extensible and Reproducible Experimental Platform for Kubernetes Autoscaling Research",
+          "authors": "Ze Wang, Sajid Alam, Amjad Ullah (Edinburgh Napier University)",
+          "presenter": "Ze Wang"
         },
         {
           "time": "14:30",
           "end": "14:50",
-          "title": "SP-Core: A Provider-Aware Hierarchical Service Planning for Proactive QoS Stabilization in Vehicular Edge Networks"
+          "title": "SP-Core: A Provider-Aware Hierarchical Service Planning for Proactive QoS Stabilization in Vehicular Edge Networks",
+          "authors": "Mohan Liyanage, Suhrut R. Heroorkar, Akash C. Shrinivasmurthy, Arnova Abdullah, Ivan Dokuchaev, Ali K. Idrees, Rolf Schuster (University of Applied Sciences and Arts Dortmund (FH Dortmund), Germany)",
+          "presenter": "Akash C. Shrinivasmurthy"
         },
         {
           "time": "15:30",
           "end": "15:50",
-          "title": "Quantum Leader Election for SDN Controller Coordination"
+          "title": "Quantum Leader Election for SDN Controller Coordination",
+          "authors": "Davide Ferrari (University of Parma, Italy); Antonio Manzalini (TIM, Turin, Italy); Michele Amoretti (University of Parma, Italy)",
+          "presenter": "Davide Ferrari"
         },
         {
           "time": "15:50",
@@ -198,12 +206,16 @@
         {
           "time": "16:10",
           "end": "16:30",
-          "title": "Mind the Gap: Blockchain Systems Between Theory and Practice"
+          "title": "Mind the Gap: Blockchain Systems Between Theory and Practice",
+          "authors": "Daria Dziubałtowska, Radosław Michalski (Wrocław University of Science and Technology)",
+          "presenter": "Daria Dziubałtowska"
         },
         {
           "time": "16:30",
           "end": "16:50",
-          "title": "When to Snapshot: Reconfiguration-Aware Compaction Intervals for Geo-Replicated State Machines"
+          "title": "When to Snapshot: Reconfiguration-Aware Compaction Intervals for Geo-Replicated State Machines",
+          "authors": "Raj Kumar Pandey (The Pennsylvania State University); Pramod Kumar (Nutanix); Hardik Ruparel (University of California, Irvine)",
+          "presenter": "Raj Kumar Pandey"
         }
       ]
     },

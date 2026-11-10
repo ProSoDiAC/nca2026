@@ -305,6 +305,14 @@ function SessionDetail({ session: s }: { session: Session }) {
         </div>
       )}
       {s.papers.length === 0 && <p className="m-0 text-sm text-muted">{t.papersTba}</p>}
+      {s.papers.some((p) => p.presenter) && (
+        <p className="m-0 flex items-center gap-2 text-[12.5px] text-muted" aria-hidden="true">
+          <span className="font-medium text-body underline decoration-teal decoration-2 underline-offset-[3px]">
+            {t.presenterLegendSample}
+          </span>
+          {t.presenterLegendText}
+        </p>
+      )}
       <ol className="m-0 flex list-none flex-col p-0">
         {s.papers.map((p, i) => (
           <AgendaRow key={i} item={p} />
@@ -360,8 +368,26 @@ function AgendaRow({ item: p }: { item: SessionItem }) {
       <AgendaTime item={p} />
       <span className="flex min-w-0 flex-col gap-0.5">
         <span className="break-words text-[14.5px] font-medium leading-[1.35]">{p.title}</span>
-        {p.authors && <span className="break-words text-[13px] text-muted">{p.authors}</span>}
+        {p.authors && (
+          <span className="break-words text-[13px] text-muted">
+            <Authors authors={p.authors} presenter={p.presenter} />
+          </span>
+        )}
       </span>
     </li>
+  );
+}
+
+/** Author list with the presenting author underlined (and announced to screen readers). */
+function Authors({ authors, presenter }: { authors: string; presenter?: string }) {
+  const at = presenter ? authors.indexOf(presenter) : -1;
+  if (!presenter || at < 0) return <>{authors}</>;
+  return (
+    <>
+      {authors.slice(0, at)}
+      <span className="font-medium text-body underline decoration-teal decoration-2 underline-offset-[3px]">{presenter}</span>
+      <span className="sr-only"> ({t.presenter})</span>
+      {authors.slice(at + presenter.length)}
+    </>
   );
 }

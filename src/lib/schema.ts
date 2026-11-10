@@ -58,6 +58,8 @@ export const sessionsSchema = z.object({
           end: hhmm.optional(),
           title: z.string(),
           authors: z.string().optional(),
+          /** Presenting author: must appear verbatim in `authors`; shown underlined. */
+          presenter: z.string().optional(),
         }),
       ),
     }),
