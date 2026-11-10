@@ -5,7 +5,7 @@ import { dayNumber } from '../lib/dates';
 import { strings } from '../strings';
 import { HeroNetwork } from '../components/NetworkMotif';
 import { Container } from '../components/Container';
-import { IconCalendar, IconChevronRight, IconNews, IconPeople, IconPin } from '../components/icons';
+import { IconCalendar, IconCamera, IconChevronRight, IconNews, IconPeople, IconPin } from '../components/icons';
 import { ImportantChip, newsDate } from '../components/NewsMeta';
 
 const s = strings.home;
@@ -133,6 +133,31 @@ export function HomePage() {
               <TileText {...s.quick.venue} />
             </a>
           </div>
+        </section>
+
+        {/* Photo gallery (external site) */}
+        <section className="flex flex-col gap-3 md:gap-4">
+          <SectionTitle>{s.photos.title}</SectionTitle>
+          <a
+            href={s.photos.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative flex flex-col gap-4 overflow-hidden rounded-card-lg bg-night p-5 text-white md:flex-row md:items-center md:justify-between md:p-7"
+          >
+            <span className="flex items-center gap-4">
+              <span className="flex h-12 w-12 flex-none items-center justify-center rounded-2xl bg-white/10 text-ochre">
+                <IconCamera size={26} />
+              </span>
+              <span className="flex flex-col gap-1">
+                <span className="font-sora text-[17px] font-semibold leading-[1.25] md:text-xl">{s.photos.heading}</span>
+                <span className="text-sm text-ice">{s.photos.sub}</span>
+              </span>
+            </span>
+            <span className="flex min-h-[48px] flex-none items-center justify-center gap-2 rounded-[14px] bg-ochre px-5 text-[15px] font-semibold text-night">
+              {s.photos.cta}
+              <IconChevronRight />
+            </span>
+          </a>
         </section>
 
         {/* About + Where */}

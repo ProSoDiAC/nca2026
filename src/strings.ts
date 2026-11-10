@@ -40,6 +40,13 @@ export const strings = {
     mapsUrl: 'https://www.google.com/maps/place//data=!4m2!3m1!1s0x1313cc206216d8ed:0xc8a4f92bcc603f61',
     latestNews: 'Latest news',
     keynotesTitle: 'Keynote speakers',
+    photos: {
+      title: 'Photo gallery',
+      heading: 'Official NCA 2026 photo gallery',
+      sub: 'Photos of every conference day by Domenico Santangelo.',
+      cta: 'Open the gallery',
+      url: 'https://nca2026-dsphoto.pages.dev/',
+    },
     seeAll: 'See all',
     sponsorsTitle: 'Sponsors & patronage',
     sponsors: [
@@ -63,6 +70,7 @@ export const strings = {
     fullName: 'The 24th IEEE International Symposium on Network Computing and Applications',
     openInMaps: 'Open in Google Maps',
     website: 'Official website: nca-ieee.org/2026',
+    photos: 'Photo gallery',
     websiteUrl: 'https://www.nca-ieee.org/2026/',
   },
   program: {

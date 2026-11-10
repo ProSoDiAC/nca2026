@@ -31,6 +31,9 @@ export function Footer() {
           <a href={f.websiteUrl} target="_blank" rel="noopener noreferrer" className="text-white underline underline-offset-4">
             {f.website}
           </a>
+          <a href={h.photos.url} target="_blank" rel="noopener noreferrer" className="text-white underline underline-offset-4">
+            {f.photos}
+          </a>
         </div>
       </Container>
     </footer>
