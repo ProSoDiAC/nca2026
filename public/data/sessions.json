@@ -572,16 +572,10 @@
       "start": "15:30",
       "end": "17:00",
       "title": "High-Performance & Emerging Computing Systems",
-      "chair": [
-        {
-          "name": "Stefano Silvestri",
-          "affiliation": "ICAR-CNR, Italy"
-        },
-        {
-          "name": "Adel Ben Mnaouer",
-          "affiliation": "University of Prince Mugrin, Saudi Arabia"
-        }
-      ],
+      "chair": {
+        "name": "Adel Ben Mnaouer",
+        "affiliation": "University of Prince Mugrin, Saudi Arabia"
+      },
       "papers": [
         {
           "title": "DAHL: Energy-Efficient Machine Learning on Heterogeneous CPU using Task-based Programming",
