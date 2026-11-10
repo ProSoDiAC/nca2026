@@ -1,6 +1,21 @@
 {
   "news": [
     {
+      "id": "welcome-cocktail-meeting-point",
+      "date": "2026-11-10",
+      "category": "Social event",
+      "important": true,
+      "title": "Welcome Cocktail tonight: meet at 18:30 in Piazza Duomo",
+      "summary": "Updated time and meeting point for today's Welcome Cocktail: 18:30, Piazza Duomo, Ortigia.",
+      "body": "The Welcome Cocktail starts tonight, Tuesday 10 November.\n\nTime: 18:30\nMeeting point: Piazza Duomo, Ortigia (Siracusa)\n\nThis updates the Welcome Cocktail information in the program.",
+      "links": [
+        {
+          "label": "Open in Google Maps",
+          "url": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x1313cdbb0fac80fb:0x70111220449b3b83"
+        }
+      ]
+    },
+    {
       "id": "editorial-follow-up",
       "date": "2026-11-10",
       "category": "Publication",

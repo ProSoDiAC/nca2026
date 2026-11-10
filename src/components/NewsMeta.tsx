@@ -11,3 +11,16 @@ export function chipColors(category: string, featured: boolean) {
   if (category === 'Workshops') return 'bg-ochre-soft text-ochre-text';
   return 'bg-teal-soft text-teal-text';
 }
+
+/** Red-ish "Important" label, shown before the category chip. */
+export function ImportantChip({ onDark = false }: { onDark?: boolean }) {
+  return (
+    <span
+      className={`rounded-chip px-2.5 py-1 text-xs font-bold uppercase tracking-[0.04em] ${
+        onDark ? 'bg-white text-alert' : 'bg-alert text-white'
+      }`}
+    >
+      {strings.news.important}
+    </span>
+  );
+}

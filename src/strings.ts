@@ -107,6 +107,7 @@ export const strings = {
     title: 'News',
     subtitle: 'Updates from the organizers',
     datePlaceholder: '[Date]',
+    important: 'Important',
     back: 'Back to news',
     notFound: 'This news item was not found.',
     empty: 'No news yet.',

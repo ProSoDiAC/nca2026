@@ -4,17 +4,13 @@ import { strings } from '../strings';
 import { PageHeader } from '../components/PageHeader';
 import { Container } from '../components/Container';
 import { CardNetwork } from '../components/NetworkMotif';
-import { chipColors, newsDate } from '../components/NewsMeta';
+import { ImportantChip, chipColors, newsDate } from '../components/NewsMeta';
 
 const t = strings.news;
 
 export function NewsPage() {
   const { news } = useData();
-  // news.json is kept newest-first; items with a date are additionally sorted newest-first.
-  const items = [...news]
-    .map((n, i) => ({ n, i }))
-    .sort((a, b) => (a.n.date && b.n.date ? b.n.date.localeCompare(a.n.date) : 0) || a.i - b.i)
-    .map(({ n }) => n);
+  const items = news; // already ordered: important first, then newest first
 
   return (
     <>
@@ -30,7 +26,8 @@ export function NewsPage() {
                 className="relative flex w-full flex-col gap-2.5 overflow-hidden rounded-card-lg bg-night p-5 text-white md:p-7"
               >
                 <CardNetwork />
-                <div className="relative flex items-center gap-2">
+                <div className="relative flex flex-wrap items-center gap-2">
+                  {n.important && <ImportantChip onDark />}
                   <span className={`rounded-chip px-2.5 py-1 text-xs font-semibold ${chipColors(n.category, true)}`}>{n.category}</span>
                   <span className="text-xs text-ice">{newsDate(n.date)}</span>
                 </div>
@@ -44,7 +41,8 @@ export function NewsPage() {
                 to={`/news/${encodeURIComponent(n.id)}`}
                 className="flex w-full flex-col gap-2 rounded-card-lg bg-card p-[18px] transition-shadow hover:shadow-[0_2px_12px_rgba(10,37,64,0.08)] md:p-6"
               >
-                <div className="flex items-center gap-2">
+                <div className="flex flex-wrap items-center gap-2">
+                  {n.important && <ImportantChip />}
                   <span className={`rounded-chip px-2.5 py-1 text-xs font-semibold ${chipColors(n.category, false)}`}>{n.category}</span>
                   <span className="text-xs text-tab">{newsDate(n.date)}</span>
                 </div>

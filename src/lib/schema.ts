@@ -75,6 +75,10 @@ export const newsSchema = z.object({
       title: z.string(),
       summary: z.string(),
       body: z.string(),
+      /** Pinned at the top of News and Home, with an "Important" label. */
+      important: z.boolean().optional(),
+      /** Buttons under the text, e.g. a Google Maps link. */
+      links: z.array(z.object({ label: z.string().min(1), url: z.string().url() })).optional(),
     }),
   ),
 });

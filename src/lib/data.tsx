@@ -59,7 +59,16 @@ export function DataProvider({ children }: { children: ReactNode }) {
           program: p.value,
           sessions,
           sessionsById: new Map(sessions.map((x) => [x.id, x])),
-          news: n.value.news,
+          // Important first, then newest first (by date), otherwise the order of news.json.
+          news: n.value.news
+            .map((x, i) => ({ x, i }))
+            .sort(
+              (a, b) =>
+                Number(!!b.x.important) - Number(!!a.x.important) ||
+                (a.x.date && b.x.date ? b.x.date.localeCompare(a.x.date) : 0) ||
+                a.i - b.i,
+            )
+            .map(({ x }) => x),
         },
       });
     });

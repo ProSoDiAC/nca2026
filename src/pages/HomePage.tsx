@@ -5,7 +5,8 @@ import { dayNumber } from '../lib/dates';
 import { strings } from '../strings';
 import { HeroNetwork } from '../components/NetworkMotif';
 import { Container } from '../components/Container';
-import { IconCalendar, IconNews, IconPeople, IconPin } from '../components/icons';
+import { IconCalendar, IconChevronRight, IconNews, IconPeople, IconPin } from '../components/icons';
+import { ImportantChip, newsDate } from '../components/NewsMeta';
 
 const s = strings.home;
 
@@ -35,6 +36,8 @@ export function HomePage() {
   const { news, program } = useData();
   const dowByDate = new Map(program.days.map((d) => [d.date, d.dow]));
   const keynotes = program.entries.filter((e) => e.type === 'keynote');
+  const important = news.filter((n) => n.important);
+  const latest = news.filter((n) => !n.important);
 
   return (
     <div className="flex flex-col">
@@ -77,6 +80,30 @@ export function HomePage() {
       </section>
 
       <Container className="flex flex-col gap-7 pb-7 pt-6 md:gap-12 md:pb-14 md:pt-10">
+        {/* Important announcements, right under the hero */}
+        {important.length > 0 && (
+          <ul className="m-0 flex list-none flex-col gap-3 p-0">
+            {important.map((n) => (
+              <li key={n.id}>
+                <Link
+                  to={`/news/${encodeURIComponent(n.id)}`}
+                  className="flex flex-col gap-1.5 rounded-card border-2 border-alert bg-card p-4 md:flex-row md:items-center md:gap-5 md:p-5"
+                >
+                  <span className="flex flex-none items-center gap-2">
+                    <ImportantChip />
+                    <span className="text-xs text-tab">{newsDate(n.date)}</span>
+                  </span>
+                  <span className="flex min-w-0 flex-col gap-0.5">
+                    <span className="font-sora text-base font-semibold">{n.title}</span>
+                    <span className="text-sm leading-normal text-sub">{n.summary}</span>
+                  </span>
+                  <IconChevronRight className="hidden flex-none text-alert md:ml-auto md:block" />
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )}
+
         {/* Quick access */}
         <section className="flex flex-col gap-3 md:gap-4">
           <SectionTitle>{s.quickAccess}</SectionTitle>
@@ -144,7 +171,7 @@ export function HomePage() {
         )}
 
         {/* Latest news: 1 on phones, up to 3 from tablet up */}
-        {news.length > 0 && (
+        {latest.length > 0 && (
           <section className="flex flex-col gap-3 md:gap-4">
             <div className="flex items-baseline justify-between">
               <SectionTitle>{s.latestNews}</SectionTitle>
@@ -153,7 +180,7 @@ export function HomePage() {
               </Link>
             </div>
             <ul className="m-0 grid list-none gap-3 p-0 md:grid-cols-2 md:gap-4 lg:grid-cols-3">
-              {news.slice(0, 3).map((n, i) => (
+              {latest.slice(0, 3).map((n, i) => (
                 <li key={n.id} className={i === 0 ? 'flex' : 'hidden md:flex'}>
                   <Link
                     to={`/news/${encodeURIComponent(n.id)}`}

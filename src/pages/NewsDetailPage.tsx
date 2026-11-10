@@ -1,8 +1,8 @@
 import { Link, useParams } from 'react-router-dom';
 import { useData } from '../lib/data';
 import { strings } from '../strings';
-import { IconChevronLeft } from '../components/icons';
-import { chipColors, newsDate } from '../components/NewsMeta';
+import { IconChevronLeft, IconPin } from '../components/icons';
+import { ImportantChip, chipColors, newsDate } from '../components/NewsMeta';
 
 const t = strings.news;
 
@@ -21,7 +21,8 @@ export function NewsDetailPage() {
       </div>
       {item ? (
         <article className="flex flex-col gap-3 px-5 pb-8 pt-2 md:px-0 md:pb-14">
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
+            {item.important && <ImportantChip />}
             <span className={`rounded-chip px-2.5 py-1 text-xs font-semibold ${chipColors(item.category, false)}`}>{item.category}</span>
             <span className="text-xs text-tab">{newsDate(item.date)}</span>
           </div>
@@ -33,6 +34,22 @@ export function NewsDetailPage() {
                 {para}
               </p>
             ))}
+            {item.links && item.links.length > 0 && (
+              <div className="flex flex-wrap gap-2.5 pt-1">
+                {item.links.map((l) => (
+                  <a
+                    key={l.url}
+                    href={l.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex min-h-[48px] items-center gap-2 rounded-[14px] bg-night px-4 text-[15px] font-semibold text-white"
+                  >
+                    <IconPin size={20} className="text-ochre" />
+                    {l.label}
+                  </a>
+                ))}
+              </div>
+            )}
           </div>
         </article>
       ) : (

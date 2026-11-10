@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         night: '#0A2540',
+        alert: '#B42318',
         teal: { DEFAULT: '#0E7C86', text: '#0A5E66', soft: '#DDF0F2', light: '#5FB3C4', line: '#2F6F8F' },
         ochre: { DEFAULT: '#E8A33D', soft: '#FBEBCF', text: '#7A4A06' },
         page: '#F4F7F8',
