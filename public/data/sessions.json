@@ -398,15 +398,21 @@
       "papers": [
         {
           "title": "PhD Forum: Measuring Circuit-Invariant Website Fingerprintability in Tor",
-          "authors": "Arbena Musa (University of Prishtina, Kosovo)"
+          "authors": "Arbena Musa (University of Prishtina, Kosovo)",
+          "time": "15:30",
+          "end": "15:45"
         },
         {
           "title": "PhD Forum: Toward Trustworthy Medical Foundation Models Across the Clinical Edge-Cloud Continuum",
-          "authors": "Fabio Orazio Mirto (University of Messina, Italy)"
+          "authors": "Fabio Orazio Mirto (University of Messina, Italy)",
+          "time": "15:45",
+          "end": "16:00"
         },
         {
           "title": "PhD Forum: Beyond Predictive Maintenance to a Trustworthy Agentic Ecosystem for Automated Operational Certification",
-          "authors": "Ilenia Ficili (Università Degli Studi di Messina, Italy)"
+          "authors": "Ilenia Ficili (Università Degli Studi di Messina, Italy)",
+          "time": "16:00",
+          "end": "16:15"
         }
       ]
     },
@@ -806,7 +812,16 @@
       "end": "17:00",
       "title": "GreenNet-AI 2026: AI-Driven Approaches for Green and Sustainable Networking",
       "chair": null,
-      "papers": []
+      "papers": [
+        {
+          "title": "A Comparative Study of the Energy Cost of Multi-Component Service Placement in the Cloud",
+          "authors": "Théo Hardy; Farah Aït-Salaht; Daniel Wladdimiro"
+        },
+        {
+          "title": "A Layered Sentinel Defense for LLM Multi-Agent Communication",
+          "authors": "Aamod Vyas; Aditya Kumar Jha; Giovanni Merlino; Antonio Puliafito"
+        }
+      ]
     },
     {
       "id": "s9",
