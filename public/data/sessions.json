@@ -175,7 +175,9 @@
         {
           "time": "13:50",
           "end": "14:10",
-          "title": "Authority-Aware Deployment Contracts for Constrained Cyber-Physical Endpoints in the Cloud Continuum"
+          "title": "Authority-Aware Deployment Contracts for Constrained Cyber-Physical Endpoints in the Cloud Continuum",
+          "authors": "Mohammad Ghavidel Vahid; Luca D'Agati; Guido Di Bella; Giovanni Merlino",
+          "presenter": "Mohammad Ghavidel Vahid"
         },
         {
           "time": "14:10",
@@ -201,7 +203,9 @@
         {
           "time": "15:50",
           "end": "16:10",
-          "title": "P4Log: High-Throughput Fault-Tolerant Log Replication Through In-Network Coordination"
+          "title": "P4Log: High-Throughput Fault-Tolerant Log Replication Through In-Network Coordination",
+          "authors": "Luís Pereira, João Marco C. Silva, Ana Nunes Alonso, José Orlando Pereira",
+          "presenter": "Ana Nunes Alonso"
         },
         {
           "time": "16:10",
