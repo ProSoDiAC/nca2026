@@ -1,13 +1,42 @@
 {
   "news": [
     {
+      "id": "photo-gallery-online",
+      "date": "2026-11-11",
+      "category": "Photos",
+      "important": true,
+      "title": "Conference photos are online",
+      "summary": "The official NCA 2026 photo gallery is now public: browse the photos of the conference days.",
+      "body": "The official photo gallery of NCA 2026, with photos by Domenico Santangelo, is now public.\n\nThe photos are organized by conference day and new ones will be added as the conference goes on.",
+      "links": [
+        {
+          "label": "Open the photo gallery",
+          "url": "https://nca2026-dsphoto.pages.dev/"
+        }
+      ]
+    },
+    {
+      "id": "social-activities-11-nov",
+      "date": "2026-11-11",
+      "category": "Social event",
+      "important": true,
+      "title": "Today's social activities: meet at 16:50, departure at 17:00",
+      "summary": "Please be on time: meet at the conference venue at 16:50. We leave on foot at 17:00 for the Ortigia tourist train and the Opera dei Pupi puppet theatre.",
+      "body": "Please be on time.\n\n16:50 – Meeting point: the conference venue, Siracusa Urban Center (Via Nino Bixio 1)\n17:00 – Departure on foot from the venue\n\nParticipants will be split into two groups. One group takes a tour of Ortigia on the tourist trains, while the other attends a show at the Opera dei Pupi, the traditional Sicilian puppet theatre. Then the two groups swap.\n\nThe activities end at about 19:45–20:00. Afterwards you are free to go to dinner: we have already sent some suggestions on where to eat by email.",
+      "links": [
+        {
+          "label": "Conference venue on Google Maps",
+          "url": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x1313cc206216d8ed:0xc8a4f92bcc603f61"
+        }
+      ]
+    },
+    {
       "id": "welcome-cocktail-meeting-point",
       "date": "2026-11-10",
       "category": "Social event",
-      "important": true,
-      "title": "Welcome Cocktail tonight: meet at 18:45 in Piazza Duomo",
-      "summary": "Tonight: meet at 18:45 in Piazza Duomo, Ortigia. The cocktail starts at 19:00 at Kaleido Terrace, Via Pompeo Picherali 10.",
-      "body": "The Welcome Cocktail is tonight, Tuesday 10 November.\n\n18:45 – Meeting point: Piazza Duomo, Ortigia (Siracusa)\n19:00 – Welcome Cocktail at Kaleido Terrace, Via Pompeo Picherali 10, 96100 Siracusa (Ortigia)\n\nKaleido Terrace is in Ortigia, a short walk from Piazza Duomo. Other venues with a similar name exist elsewhere: use the map link below.\n\nThis updates the Welcome Cocktail information in the program.",
+      "title": "Welcome Cocktail on 10 November: Piazza Duomo and Kaleido Terrace",
+      "summary": "On Tuesday 10 November participants met at 18:45 in Piazza Duomo, Ortigia, for the Welcome Cocktail at Kaleido Terrace, Via Pompeo Picherali 10.",
+      "body": "The Welcome Cocktail took place on Tuesday 10 November.\n\n18:45 – Meeting point: Piazza Duomo, Ortigia (Siracusa)\n19:00 – Welcome Cocktail at Kaleido Terrace, Via Pompeo Picherali 10, 96100 Siracusa (Ortigia)\n\nKaleido Terrace is in Ortigia, a short walk from Piazza Duomo. Other venues with a similar name exist elsewhere: use the map link below.\n\nThis updates the Welcome Cocktail information in the program.",
       "links": [
         {
           "label": "Piazza Duomo on Google Maps",
