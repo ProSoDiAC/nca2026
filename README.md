@@ -36,7 +36,7 @@ All content lives in three JSON files in `public/data/`:
 |---|---|
 | `program.json` | `rooms` (toggle order, first = default) and the timeline per day. Entry types: `break`, `social`, `session` (points to `sessions.json` via `sessionId`), `keynote`, `plenary`. `room: "all"` shows the entry in both rooms; `"showInAllRooms": true` shows an entry held in one room also in the other room's view (used for keynotes, opening and closing in Sala B). A workshop over two slots is two `session` entries with the same `sessionId`. |
 | `sessions.json` | One item per session/workshop/track: `id`, `code` (chip label, e.g. `S1`, `W3`), `kind`, day, room, `start`/`end`, optional `slots` (when split by a break), `title`, `chair` (or `null` until known), `papers`. |
-| `news.json` | News items, newest first. Optional `"important": true` pins an item at the top of News and shows it as an alert on Home; optional `"links": [{"label": "…", "url": "https://…"}]` adds buttons (e.g. Google Maps). `date` is `"YYYY-MM-DD"` or `null` (shown as "[Date]"). Paragraphs in `body` are separated by a blank line (`\n\n`). |
+| `news.json` | News items, newest first. Optional `"important": true` pins an item at the top of News and shows it as an alert on Home; optional `"links": [{"label": "…", "url": "https://…"}]` adds buttons (e.g. Google Maps). In `body`, `**text**` is shown in bold. `date` is `"YYYY-MM-DD"` or `null` (shown as "[Date]"). Paragraphs in `body` are separated by a blank line (`\n\n`). |
 
 ### Adding papers and chairs
 

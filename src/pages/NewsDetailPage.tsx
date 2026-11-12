@@ -31,7 +31,7 @@ export function NewsDetailPage() {
           <div className="mt-1 flex flex-col gap-3 rounded-card-lg bg-card p-[18px] md:p-7">
             {item.body.split(/\n{2,}/).map((para, i) => (
               <p key={i} className="m-0 whitespace-pre-line text-[15px] leading-[1.6] text-body">
-                {para}
+                <RichText text={para} />
               </p>
             ))}
             {item.links && item.links.length > 0 && (
@@ -58,5 +58,23 @@ export function NewsDetailPage() {
         </p>
       )}
     </div>
+  );
+}
+
+/** Minimal formatting for news text: **bold**. */
+function RichText({ text }: { text: string }) {
+  const parts = text.split(/\*\*(.+?)\*\*/g);
+  return (
+    <>
+      {parts.map((part, i) =>
+        i % 2 === 1 ? (
+          <strong key={i} className="font-semibold text-night">
+            {part}
+          </strong>
+        ) : (
+          part
+        ),
+      )}
+    </>
   );
 }

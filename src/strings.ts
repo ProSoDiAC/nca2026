@@ -43,7 +43,7 @@ export const strings = {
     photos: {
       title: 'Photo gallery',
       heading: 'Official NCA 2026 photo gallery',
-      sub: 'Photos of every conference day by Domenico Santangelo.',
+      sub: 'Photos of every conference day.',
       cta: 'Open the gallery',
       url: 'https://nca2026-dsphoto.pages.dev/',
     },

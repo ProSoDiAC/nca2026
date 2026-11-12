@@ -1,13 +1,45 @@
 {
   "news": [
     {
+      "id": "social-activities-12-nov",
+      "date": "2026-11-12",
+      "category": "Social event",
+      "important": true,
+      "title": "Today: guided walking tour of Ortigia at 16:45, gala dinner at 20:00",
+      "summary": "Meet at the venue entrance at 16:45 for the optional guided walking tour of Ortigia. Gala dinner at 20:00 at Area M.",
+      "body": "16:45 – Meeting point: the entrance of the conference venue. The tour is optional: if you prefer not to join, that is no problem.\n\nYou will be split into two groups that follow the same walking tour of Ortigia with the guides, 10 minutes apart, to avoid crowding in the small places you will visit.\n\nThe tour lasts about two hours. Around 19:00–19:15 you will be left at the Temple of Apollo, a convenient spot from which you are free to do as you like.\n\n20:00 – Social Gala Dinner at Area M (Riva Nazario Sauro 6, Siracusa).\n\n**If you are not joining the tour, meet us directly at the dinner venue.**\n\nFor any further information, please ask at the front desk.",
+      "links": [
+        {
+          "label": "Temple of Apollo on Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Temple+of+Apollo%2C+Siracusa&query_place_id=ChIJeX3ANB7MExMRrSesssAiiHk"
+        },
+        {
+          "label": "Area M on Google Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Area+M%2C+Riva+Nazario+Sauro+6%2C+Siracusa&query_place_id=ChIJm7Ii8aDOExMR38RoiVd6rSs"
+        }
+      ]
+    },
+    {
+      "id": "photos-days-1-2",
+      "date": "2026-11-12",
+      "category": "Photos",
+      "title": "Photos of the first two days are online",
+      "summary": "The photos of 10 and 11 November are now in the official photo gallery.",
+      "body": "The photos of the first two conference days, 10 and 11 November, are now in the official photo gallery.",
+      "links": [
+        {
+          "label": "Open the photo gallery",
+          "url": "https://nca2026-dsphoto.pages.dev/"
+        }
+      ]
+    },
+    {
       "id": "photo-gallery-online",
       "date": "2026-11-11",
       "category": "Photos",
-      "important": true,
       "title": "Conference photos are online",
       "summary": "The official NCA 2026 photo gallery is now public: browse the photos of the conference days.",
-      "body": "The official photo gallery of NCA 2026, with photos by Domenico Santangelo, is now public.\n\nThe photos are organized by conference day and new ones will be added as the conference goes on.",
+      "body": "The official photo gallery of NCA 2026 is now public.\n\nThe photos are organized by conference day and new ones will be added as the conference goes on.",
       "links": [
         {
           "label": "Open the photo gallery",
@@ -19,7 +51,6 @@
       "id": "social-activities-11-nov",
       "date": "2026-11-11",
       "category": "Social event",
-      "important": true,
       "title": "Today's social activities: meet at 16:50, departure at 17:00",
       "summary": "Please be on time: meet at the conference venue at 16:50. We leave on foot at 17:00 for the Ortigia tourist train and the Opera dei Pupi puppet theatre.",
       "body": "Please be on time.\n\n16:50 – Meeting point: the conference venue, Siracusa Urban Center (Via Nino Bixio 1)\n17:00 – Departure on foot from the venue\n\nParticipants will be split into two groups. One group takes a tour of Ortigia on the tourist trains, while the other attends a show at the Opera dei Pupi, the traditional Sicilian puppet theatre. Then the two groups swap.\n\nThe activities end at about 19:45–20:00. Afterwards you are free to go to dinner: we have already sent some suggestions on where to eat by email.",
