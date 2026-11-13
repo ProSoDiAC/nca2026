@@ -1,12 +1,25 @@
 {
   "news": [
     {
+      "id": "photos-day-12",
+      "date": "2026-11-13",
+      "category": "Photos",
+      "title": "Photos of 12 November are online",
+      "summary": "The photos of Thursday 12 November are now in the official photo gallery.",
+      "body": "The photos of the third conference day, Thursday 12 November, are now in the official photo gallery.",
+      "links": [
+        {
+          "label": "Open the photo gallery",
+          "url": "https://nca2026-dsphoto.pages.dev/"
+        }
+      ]
+    },
+    {
       "id": "social-activities-12-nov",
       "date": "2026-11-12",
       "category": "Social event",
-      "important": true,
-      "title": "Today: guided walking tour of Ortigia at 16:45, gala dinner at 20:00",
-      "summary": "Meet at the venue entrance at 16:45 for the optional guided walking tour of Ortigia. Gala dinner at 20:00 at Area M.",
+      "title": "Guided walking tour of Ortigia and gala dinner at Area M (12 November)",
+      "summary": "On Thursday 12 November: optional guided walking tour of Ortigia from 16:45, then the gala dinner at 20:00 at Area M.",
       "body": "16:45 – Meeting point: the entrance of the conference venue. The tour is optional: if you prefer not to join, that is no problem.\n\nYou will be split into two groups that follow the same walking tour of Ortigia with the guides, 10 minutes apart, to avoid crowding in the small places you will visit.\n\nThe tour lasts about two hours. Around 19:00–19:15 you will be left at the Temple of Apollo, a convenient spot from which you are free to do as you like.\n\n20:00 – Social Gala Dinner at Area M (Riva Nazario Sauro 6, Siracusa).\n\n**If you are not joining the tour, meet us directly at the dinner venue.**\n\nFor any further information, please ask at the front desk.",
       "links": [
         {
